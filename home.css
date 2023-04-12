@@ -1,0 +1,15 @@
+.rodape {
+    background-color: #2B2B2B;
+  }
+  
+  .texto-rodape {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+  
+  .justificado-centro {
+    display: flex;
+    justify-content: center;
+  }
