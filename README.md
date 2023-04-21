@@ -1,16 +1,67 @@
-# projeto-integrador
-Projeto Integrador Sprint I
+# Portal Tech - Proz Educação
 
-<p>https://docs.google.com/document/d/1tuqsXT2rWqE2DvgZpq9YB0tblS1ld585LSgHggOrf0Q/edit "Artur Herodeck"</p> 
+## Curso de Introdução à Programação (2023)
 
-<p>https://drive.google.com/file/d/1ibVqKiKFRQZ-0-bchZpbDsHz4yAmf30i/view?usp=share_link "Bruno de  Souza Ferreira"</p>
 
-<p>https://drive.google.com/file/d/1NdbBr5FMmPyCpLG77aWsMMnbogqIkIN9/view?usp=sharing "Debora Carmo"</p>
 
-<p>https://drive.google.com/file/d/1qWQHg8Hoc6K5W3kRuNJiYUE1jEtVBhJB/view?usp=sharing "Layout Python Grasiele"</p>
+### Professora: Juliana Sinnott
 
-<p>https://drive.google.com/file/d/19Me8X1xMM9fDEQ1nXWRybAi28DEtz6Rd/view "Layout index opção 1 - Helionar"</p>
+### Turma 5 - Grupo 2 (Projeto Integrador)
 
-<p>https://drive.google.com/file/d/1nHkHXO-GranEUoUHEsxg28RHA-ADCjT9/view "Layout index opção 2 - Helionar"</p>
+___
 
-<p>https://drive.google.com/file/d/15-N5esj8P9Z3_OAINBNaO7CfvmnJ9hkG/view "Layout index opção 3 - Helionar"</p>
+
+
+- **Tecnologias Utilizadas:**
+
+  HTML
+
+  CSS
+
+  JavaScript
+  
+  
+
+
+- **Tema do Projeto:**
+
+  Site de Cursos de Programação
+  
+  
+
+
+- **Nome do Site:**
+
+  S.O.S TI
+  
+  
+
+
+- **Etapas do Desenvolvimento:**
+
+  Sprint l: Criar um Layout com 5 Páginas relacionadas ao Tema do Projeto
+
+  Sprint ll: Criar Estrutura HTML para cada Layout criado anteriormente
+
+  Sprint lll: Estilizar as Páginas criadas anteriormente em HTML
+
+  Sprint lV:
+  
+  Sprint V:
+  
+  
+
+
+- **Equipe:**
+
+  André https://github.com/AndreMr19
+
+  Artur Herodeck https://github.com/ArturHerodeck
+
+  Bruno Ferreira https://github.com/BrunoFerreira1990
+
+  Débora Carmo https://github.com/DehCarmoo
+
+  Grasiele Tinoco https://github.com/grasieletinoco
+
+  Helionar Faria https://github.com/helionarfaria
