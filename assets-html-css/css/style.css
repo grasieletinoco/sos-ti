@@ -1,0 +1,95 @@
+/*roxo escuro #8615bd
+roxo claro #983dff
+roxo  mais claro #9688ff
+azul escuro #4cadff
+azul claro #50e4ff 
+roxo escuro #8615bd
+roxo claro #983dff
+roxo  mais claro #9688ff
+azul escuro #4cadff
+azul claro #50e4ff*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: flex;
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+li a:hover {
+    background-color: hsl(269, 84%, 33%);
+    color: #FF4500;
+}
+
+.sobre {
+    background-color: #8615bd;
+    border-style: groove;
+    color: whitesmoke;
+}
+
+#titulo {
+    text-align: center;
+}
+
+section > h3 {
+    flex-direction: row;
+}
+
+.cursos-sec {
+    display: flex;
+}
+
+.cursos-div {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+}
+
+.livros {
+    width: 80vw;
+    margin: auto;
+}
+
+img {
+    width: 25vw;
+    height: 25vw;
+    padding: 5px;
+}
+
+.rodape {
+background-color: #2B2B2B;
+}
+
+.texto-rodape {
+font-family: 'Times New Roman', Times, serif;
+font-size: 12px;
+color: white;
+text-align: center;
+}
+
+.justificado-centro {
+display: flex;
+justify-content: center;
+}
