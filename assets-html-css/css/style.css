@@ -53,6 +53,9 @@ li a:hover {
     font-size: 1.4em;
     width: 90%;
     margin: auto;
+    /*margin-top: 15px;*/
+    margin-bottom: 15px;
+    text-indent: 50px;
 }
 
 .tipo-curso {
@@ -60,12 +63,11 @@ li a:hover {
     font-size: 2.5em;
 }
 
-#titulo {
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-}
-
-section > h3 {
-    flex-direction: row;
+    font-size: 20px;
 }
 
 .secao {
@@ -77,15 +79,38 @@ section > h3 {
 
 .cursos-sec {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .cursos-div {
     width: 20vw;
+    /*height: 80vh;*/
     display: flex;
     flex-direction: column;
     border-style: groove;
     border-radius: 20px;
     margin: auto;
+    text-align: justify;
+    
+}
+
+.link {
+    background-color: white;
+    width: 150px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.titulo-curso {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
 .livros {
