@@ -14,6 +14,10 @@ azul claro #50e4ff*/
     padding: 0;
 }
 
+body {
+    background-image: linear-gradient(to bottom, #8615bd, #983dff, #9688ff);
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,9 +48,16 @@ li a:hover {
 }
 
 .sobre {
-    background-color: #8615bd;
+    /*background-color: #8615bd;*/
     border-style: groove;
-    color: whitesmoke;
+    font-size: 1.4em;
+    width: 90%;
+    margin: auto;
+}
+
+.tipo-curso {
+    text-align: center;
+    font-size: 2.5em;
 }
 
 #titulo {
@@ -57,14 +68,24 @@ section > h3 {
     flex-direction: row;
 }
 
+.secao {
+   /* border-style: groove;*/
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+
 .cursos-sec {
     display: flex;
 }
 
 .cursos-div {
+    width: 20vw;
     display: flex;
     flex-direction: column;
     border-style: groove;
+    border-radius: 20px;
+    margin: auto;
 }
 
 .livros {
@@ -73,9 +94,21 @@ section > h3 {
 }
 
 img {
-    width: 25vw;
-    height: 25vw;
+    image-orientation: flip;
+    width: 19vw;
+    height: 15vw;
     padding: 5px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#dicas-livros {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.img-livros {
+    width: 12vw;
 }
 
 .rodape {
