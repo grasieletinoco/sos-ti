@@ -128,13 +128,10 @@ footer div ul li{
 
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    height: 150px;
     background-image: linear-gradient(to top, #222222 0%, black 100%);
-}
-
-.column{
-    justify-content: center;
-    margin: 2rem;
 }
 
 .column h2{
@@ -159,9 +156,6 @@ footer div ul li{
 }
 
 .column:nth-child(4){
-    justify-content: center;
-    margin: 1.5rem;
-    padding: 0.9rem;
     background-color: #222222;
     border-radius: 16px;
     border: 3px double #303030;
@@ -171,10 +165,14 @@ footer div ul li{
     color: #D3D3D3;
 }
 
-  input[type="email"] {
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="email"] {   
     border: 0;
     padding: 0.625rem;
-    margin-top: 0.3125rem;
     width: 230px;
   }
 
@@ -183,8 +181,7 @@ footer div ul li{
     color: #fff;
     cursor: pointer;
     border: 0;
-    padding: 0.625rem 0.5rem;
-    margin-top: 0.3125rem;
+    padding: 0.625rem 0.625rem;
   }
 
 .Copyright-informativo{
@@ -194,14 +191,6 @@ footer div ul li{
     border-top: 1px inset #4F4F4F;
     font-size: 0.9rem; 
     padding: 0.2rem;
-}
-
-.Copyright{
-    margin: 0 1.7rem;
-}
-
-.informativo ul{
-    margin: 0 1.7rem;
 }
 
 .informativo ul li{
