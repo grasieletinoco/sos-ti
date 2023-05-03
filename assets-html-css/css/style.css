@@ -2,12 +2,7 @@
 roxo claro #983dff
 roxo  mais claro #9688ff
 azul escuro #4cadff
-azul claro #50e4ff 
-roxo escuro #8615bd
-roxo claro #983dff
-roxo  mais claro #9688ff
-azul escuro #4cadff
-azul claro #50e4ff*/
+azul claro #50e4ff */
 
 * {
     margin: 0;
@@ -15,7 +10,8 @@ azul claro #50e4ff*/
 }
 
 body {
-    background-image: linear-gradient(to bottom, #8615bd, #983dff, #9688ff);
+   background-image: linear-gradient(to bottom, #8615bd, #983dff);
+  /* background-color: black;*/
 }
 
 ul {
@@ -49,14 +45,17 @@ li a:hover {
 
 .sobre {
     /*background-color: #8615bd;*/
-    border-style: groove;
+    /*border-style: groove;*/
     font-size: 1.4em;
-    width: 90%;
+    width: 80%;
     margin: auto;
     /*margin-top: 15px;*/
     margin-bottom: 15px;
     text-indent: 50px;
+    text-align: justify;
+    color: whitesmoke;
 }
+
 
 .tipo-curso {
     text-align: center;
@@ -92,7 +91,15 @@ li a:hover {
     border-radius: 20px;
     margin: auto;
     text-align: justify;
-    
+    color: white;
+    /*background-color: # 8615bd;*/
+    padding-bottom: 10px;
+}
+
+.cursos-div p {
+    width: 90%;
+    margin:auto;
+    padding-bottom: 10px;
 }
 
 .link {
@@ -104,7 +111,6 @@ li a:hover {
     border-style: groove;
     border-radius: 10px;
     text-align: center;
-
 }
 
 .titulo-curso {
