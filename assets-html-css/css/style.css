@@ -10,7 +10,7 @@ azul claro #50e4ff */
 }
 
 body {
-   background-image: linear-gradient(to bottom, #8615bd, #983dff);
+   background-image: linear-gradient(to bottom, #8615bd, #983dff, #9688ff);
   /* background-color: black;*/
 }
 
@@ -67,6 +67,7 @@ li a:hover {
     margin-bottom: 20px;
     text-align: center;
     font-size: 20px;
+    color: white;
 }
 
 .secao {
@@ -74,6 +75,7 @@ li a:hover {
     border-radius: 20px;
     width: 90%;
     margin: auto;
+    display: block;
 }
 
 .cursos-sec {
@@ -89,11 +91,18 @@ li a:hover {
     flex-direction: column;
     border-style: groove;
     border-radius: 20px;
+    border-color: #50e4ff;
     margin: auto;
     text-align: justify;
     color: white;
     /*background-color: # 8615bd;*/
     padding-bottom: 10px;
+}
+
+.cursos-div:hover {
+    border-color: #4cadff;
+    border-width: 7px;
+    transition: 0.3s;
 }
 
 .cursos-div p {
@@ -133,12 +142,12 @@ img {
     margin: auto;
 }
 
-#dicas-livros {
+.livros > p {
     text-align: center;
-    font-size: 2.5em;
 }
 
 .img-livros {
+    padding: 30px 0;
     width: 12vw;
 }
 
