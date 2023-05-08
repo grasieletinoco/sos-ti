@@ -66,7 +66,7 @@ li a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 20px;
+   /* font-size: 20px;*/
     color: white;
 }
 
@@ -75,7 +75,6 @@ li a:hover {
     border-radius: 20px;
     width: 90%;
     margin: auto;
-    display: block;
 }
 
 .cursos-sec {
@@ -85,13 +84,14 @@ li a:hover {
 }
 
 .cursos-div {
-    width: 20vw;
+    width: 23.5vw;
     /*height: 80vh;*/
     display: flex;
     flex-direction: column;
-    border-style: groove;
+    border-style: double;
     border-radius: 20px;
-    border-color: #50e4ff;
+    overflow: hidden;
+    border-color: #4cadff;
     margin: auto;
     text-align: justify;
     color: white;
@@ -100,26 +100,62 @@ li a:hover {
 }
 
 .cursos-div:hover {
-    border-color: #4cadff;
-    border-width: 7px;
-    transition: 0.3s;
+    background-color: #983dff;
+    border-color: #50e4ff;
+    transition: 0.5s;
+}
+
+.tamanho-div-m {
+    height: 150%;
+    overflow-y: auto;
+}
+
+.tamanho-div-g {
+    height: 115vh;
 }
 
 .cursos-div p {
     width: 90%;
     margin:auto;
     padding-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cursos-div img {
+    margin: 0;
+    padding: 0;
+
+    image-orientation: flip;
+    height: 15vw;
+    border-radius: 0 0 20px 20px;
+/*    width: 25vw;
+    height: 15vw;
+    padding: 5px;*/
+   /*border-radius: 20px;*/
+    /*margin: auto;*/
+    object-fit: fill;
 }
 
 .link {
     background-color: white;
-    width: 150px;
+    /*width: 150px;*/
     margin: auto;
     margin-top: 5px;
     margin-bottom: 5px;
     border-style: groove;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 100px rgba(0,0,0, 0.5);
+}
+
+.link:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.link a {
+    text-decoration: none;
 }
 
 .titulo-curso {
@@ -133,15 +169,6 @@ li a:hover {
     margin: auto;
 }
 
-img {
-    image-orientation: flip;
-    width: 19vw;
-    height: 15vw;
-    padding: 5px;
-    border-radius: 20px;
-    margin: auto;
-}
-
 .livros > p {
     text-align: center;
 }
@@ -149,6 +176,7 @@ img {
 .img-livros {
     padding: 30px 0;
     width: 12vw;
+    height: 15vw;
 }
 
 .rodape {
