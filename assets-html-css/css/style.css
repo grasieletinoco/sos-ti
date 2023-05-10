@@ -4,16 +4,6 @@ roxo  mais claro #9688ff
 azul escuro #4cadff
 azul claro #50e4ff */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-   background-image: linear-gradient(to bottom, #8615bd, #983dff, #9688ff);
-  /* background-color: black;*/
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -41,6 +31,21 @@ li a {
 li a:hover {
     background-color: hsl(269, 84%, 33%);
     color: #FF4500;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+body {
+    /*background-image: linear-gradient(to bottom, #8615bd, #983dff, #9688ff);*/
+    background-color: #8615bd;
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
 }
 
 .sobre {
@@ -84,7 +89,7 @@ li a:hover {
 }
 
 .cursos-div {
-    width: 23.5vw;
+    width: 20em;
     /*height: 80vh;*/
     display: flex;
     flex-direction: column;
@@ -106,12 +111,11 @@ li a:hover {
 }
 
 .tamanho-div-m {
-    height: 150%;
-    overflow-y: auto;
+    height: 36em;
 }
 
 .tamanho-div-g {
-    height: 115vh;
+    height: 48em;
 }
 
 .cursos-div p {
@@ -167,6 +171,14 @@ li a:hover {
 .livros {
     width: 80vw;
     margin: auto;
+    border-style: groove;
+}
+
+#livro-imagens {
+    border-style: groove;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .livros > p {
