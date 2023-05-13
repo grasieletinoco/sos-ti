@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    box-sizing: border-box;
+  }
+  
+  main {
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(img-autores/backpi.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-bottom: 220px;
+  }
+  
+  main .flip-card { 
+    margin-top: 500px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+  
+  }
+  
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+  
+  }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.9s;
+      transform-style: preserve-3d;
+  }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+  }
+    
+    .flip-card-front {
+      border-radius: 12%;
+  }
+    
+    .flip-card-back {
+      transform: rotateY(180deg);
+      border-radius: 12%;
+  }
+  
+    .flip-card-back img {
+      height: 300px;
+      width: 300px;
+      background: linear-gradient(#111, #111)
+      padding-box,
+      linear-gradient(45deg, hsl(269, 84%, 33%), #FF4500)
+      border-box;
+      border-radius: 10%;
+      border: 2px solid transparent;
+  }
+  
+    .flip-card-front img {
+      background: linear-gradient(#111, #111)
+          padding-box,
+      linear-gradient(45deg, hsl(269, 84%, 33%), #FF4500)
+          border-box;
+      border-radius: 10%;
+      border: 2px solid transparent;
+  }
+  
+  .header-content{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../assets-autores/img-autores/img-header.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  
+  .logo-search{
+    display: flex ;
+    justify-content: space-between;
+    padding: 1rem 2%;
+    align-items: center;
+  }
+  
+  .logo{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .search{
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    backdrop-filter: blur(5px);
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+  
+  .btn-search{
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    height: 28px;
+  }
+  
+  #site-search{
+    border: 0;
+    height: 28px;
+    border-radius: 5px;
+  }
+  
+  .texto-header{
+    color: #F5F5F5;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+  }
+  
+  .texto-header h3{
+    letter-spacing: 6px;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+    text-shadow: 3px 2px 0px #983dff;
+  }
+  
+  .texto-header p{
+    letter-spacing: 3px;
+    font-size: 1rem;
+    color: #D3D3D3;
+  }
+  
+  .navbar{
+    padding: 0 2%;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+  
+  .navbar a{
+    color: #FFFFFF;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+    text-decoration: none;
+  }
+  
+  .menu{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+  
+  .menu li {
+    list-style-type: none;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #4cadff;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .menu li a:hover{
+    color: #983dff;
+    background-color: #4caeff18;
+    border-radius: 10px;
+  }
+  
+  footer{
+    background-color: #070617;
+    color: #BEBEBE;
+  }
+  
+  footer div ul li{
+    list-style: none;
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2%;
+    height: 150px;
+  }
+  
+  .column h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #00a1d7;
+  }
+  
+  .column ul{
+    padding: 10px 0px;
+  }
+  
+  .social-list{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+  }
+  
+  .social-list li a img:hover{
+    scale: 1.2;
+  }
+  
+  .column:nth-child(4){
+    background-color: #f8f8ff0c;
+    border-radius: 16px;
+    border: 3px double #1C1C1C;
+  }
+  
+  #title-newsletter{
+    color: #D3D3D3;
+  }
+  
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="email"] {   
+    border: 0;
+    padding: 0.625rem;
+    width: 230px;
+  }
+  
+  input[type="submit"] {
+    background-color: #00a1d7;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.625rem;
+  }
+  
+  .Copyright-informativo{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px inset #3b70a2;
+    font-size: 0.9rem; 
+    padding: 0.2rem 2%;
+  }
+  
+  .informativo ul li{
+    display: inline-flex;
+    padding-left: 1rem;
+  }
+  
+  .informativo ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .informativo ul li a:hover{
+    color: #4cadff;
+    text-decoration: underline;
+  }
+  
+  footer p{
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  
+  
+  .linha {
+    display: flex;
+  }
+  
+  .linha img {
+    height: 55vh;
+    width: 100vw;
+  
+  }
+  
+  .coluna h2 {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contatoGrupo {
+    display: flex;
+    gap: 150px;
+    margin-left: 100px;
+  
+  }
+  
+  .contato1 {
+    display: flex;
+    gap: 15px
+  }
+  
+  .contato2 {
+    display: flex;
+    gap: 15px
+  }
+  
+  .contato3 {
+    display: flex;
+    gap: 15px
+  }
+  
+  .contato4 {
+    display: flex;
+    gap: 15px
+  }
+  
+  .contato5 {
+    display: flex;
+    gap: 15px;
+  
+  }
+  
+  .contato6 {
+    display: flex;
+    gap: 15px
+  }
+  
+  .rede1:link, .rede1:visited {
+      background-color: black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      padding: 20px;
+      border-radius: 50%;
+      align-items: center;
+      background: url(img-autores/instaF.png);
+      background-size: 110%;
+      background-repeat: no-repeat;
+      background-position: center;
+  
+    }
+    
+  .rede1:hover, .rede1:active {
+      background: url(img-autores/insta1.png);
+      background-color: green;
+      color: black;
+      background-size: 155%;
+      background-color: black;
+      background-position: right;
+    }
+  
+  .rede2:link, .rede2:visited {
+      background-color: black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      padding: 20px;
+      border-radius: 50%;
+      align-items: center;
+      background: url(img-autores/git2.png);
+      background-size: 300%;
+      background-repeat: no-repeat;
+      background-position: center;
+   
+    }
+    
+  .rede2:hover, .rede2:active {
+      background: url(img-autores/git1.png);
+      background-color: green;
+      color: black;
+      background-size: 120%;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+  .rede3:link, .rede3:visited {
+      background-color: black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      padding: 20px;
+      border-radius: 50%;
+      align-items: center;
+      background: url(img-autores/linkedin.png);
+      background-size: 150%;
+      background-repeat: no-repeat;
+      background-position: center;
+    
+    }
+    
+  .rede3:hover, .rede3:active {
+      background: url(img-autores/linkedinF.png);
+      background-size: contain;
+      background-color: black;
+      background-position: center;
+    }
+  
+  .contatoGrupo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 105px;
+  }
+  
+  .fotos {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
