@@ -429,3 +429,53 @@
     justify-content: space-evenly;
   
   }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 7px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #00a1d7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #00a1d7;
+    color: aliceblue;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+}
+  
+input[type=submit]:hover {
+    background-color: #00a1d700;
+    color: rgb(1, 255, 77);
+    border: 1px solid rgb(1, 255, 77);
+} 
+  
+.formularioContato{
+    background: url(img-autores/backForm1.jpg);
+    padding: 20px;
+    opacity: 95%;
+}
+
+.headerForm {
+  color: aliceblue;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.dadosForm {
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
