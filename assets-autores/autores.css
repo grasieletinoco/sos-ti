@@ -13,7 +13,7 @@
       background-image: url(img-autores/backpi.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      padding-bottom: 150px;
+      padding-bottom: 100px;
   }
   
   main .flip-card { 
@@ -289,7 +289,7 @@
   }
   
   .linha img {
-    height: 50vh;
+    height: 90vh;
     width: 100vw;
 
   }
