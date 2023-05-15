@@ -174,6 +174,19 @@ main{
     border-radius: 10px;
 }
 
+#voltar_indice{
+    background-color: #dee2e6;
+    color: #343a40;
+    border-radius: 10px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+#voltar_indice:hover{
+    background-color: #dee2e6;
+    color: #ff4305
+}
+
 .text-content{
     margin: 3rem 0;
 
@@ -183,7 +196,7 @@ main{
     display: inline-block;
     font-size: 1.8rem;
     font-family: 'Oswald', sans-serif;
-    color: #6c757d;
+    color: #495057;
     margin-bottom: 5px;
 }
 
@@ -361,7 +374,6 @@ main{
 }
 
 /*FINAL LIVROS*/
-
 
 
 /*INICIO FOOTER*/
