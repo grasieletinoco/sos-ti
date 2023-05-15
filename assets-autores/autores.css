@@ -13,7 +13,7 @@
       background-image: url(img-autores/backpi.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      padding-bottom: 220px;
+      padding-bottom: 150px;
   }
   
   main .flip-card { 
@@ -285,12 +285,13 @@
   
   .linha {
     display: flex;
+  
   }
   
   .linha img {
-    height: 55vh;
+    height: 50vh;
     width: 100vw;
-  
+
   }
   
   .coluna h2 {
@@ -462,11 +463,10 @@ input[type=submit]:hover {
 } 
 
 .formularioContato{
-    padding: 20px;
+    padding: 40px;
     background: url(img-autores/backform2.png);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .headerForm {
