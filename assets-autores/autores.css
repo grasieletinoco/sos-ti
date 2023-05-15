@@ -431,10 +431,10 @@
   }
 
   input[type=text], select {
-    width: 100%;
-    padding: 7px 15px;
+    width: 28%;
+    padding: 7px 25px;
     margin: 8px 0;
-    display: inline-block;
+    display: block;
     border: 1px solid #00a1d7;
     border-radius: 4px;
     box-sizing: border-box;
@@ -442,7 +442,7 @@
 }
   
 input[type=submit] {
-    width: 100%;
+    width: 28%;
     background-color: #00a1d7;
     color: aliceblue;
     padding: 7px 15px;
@@ -458,12 +458,15 @@ input[type=submit]:hover {
     background-color: #00a1d700;
     color: rgb(1, 255, 77);
     border: 1px solid rgb(1, 255, 77);
+    
 } 
-  
+
 .formularioContato{
-    background: url(img-autores/backForm1.jpg);
     padding: 20px;
-    opacity: 95%;
+    background: url(img-autores/backform2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .headerForm {
@@ -472,6 +475,7 @@ input[type=submit]:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 5px;
   margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgb(1, 255, 77);
 }
 
 .dadosForm {
@@ -479,3 +483,4 @@ input[type=submit]:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: larger;
 }
+
