@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-/*INICIO HEADER*/
 
+/*INICIO HEADER*/
 main{
     max-width: 1300px;
     margin: auto;
@@ -121,6 +121,79 @@ main{
     border-radius: 10px;
 }
 /*FINAL HEADER*/
+
+
+
+/*INICIO CURSOS*/
+.indice-content{
+    display: flex;
+}
+
+.title-indice{
+    width:50%;
+}
+
+.img-content{
+    width:50%;
+}
+
+.cursos-gratuitos, .cursos-pagos{
+    height: 300px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-cursos-gratuitos, .card-cursos-pagos{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card-cg, .card-cp{
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+    text-align: center;
+    font-size: 0.85rem;   
+}
+
+.card-cg img, .card-cp img{
+    width: 180px;
+    height: 180px;
+    margin: 0.3rem;
+}
+/*FINAL CURSOS*/
+
+
+
+/*INICIO LIVROS*/
+.livros-conteudo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.card-livro{
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    height: 250px;
+    margin: 1rem 0;
+}
+
+.card-body-livro{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-img-livro img{
+    height: 100%;
+}
+/*FINAL LIVROS*/
+
 
 
 /*INICIO FOOTER*/
