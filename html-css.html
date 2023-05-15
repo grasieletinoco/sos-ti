@@ -8,17 +8,32 @@
     <link rel="stylesheet" href="assets-html-css/css/style.css">
 </head>
 <body>
-    <header></header>
-    <nav>
-        <ul>
+    <header class="header-content">
+        <div class="logo-search">
+          <div class="logo">
+            <a class="logo" href="#"></a>
+          </div>
+            <div class="search">
+              <label for="site-search">Pesquisar</label>
+              <input type="search" id="site-search" name="q">
+              <button class="btn-search">Ir</button>
+            </div>
+          </div>     
+        <div class="texto-header">
+          <h3>SOS T.I</h3>
+          <p>Seu Guia Na Programação</p>
+        </div>
+        <nav class="navbar">
+          <ul class="menu">
             <li><a href="home.html">Página Inicial</a></li>
             <li><a href="Introducao.html">Introdução</a></li>
             <li><a href="python.html">Python</a></li>
             <li><a href="html-css.html">HTML/CSS</a></li>
             <li><a href="javascript.html">JavaScript</a></li>
             <li><a href="autores.html">Autores</a></li>
-        </ul>
-    </nav>
+          </ul>
+        </nav>
+      </header>
     <main>
         <section class="sobre">
             <!-- Sobre o que é HTML/CSS -->
@@ -33,7 +48,7 @@
         </section>
         <section class="secao">
             <!-- Cursos gratuitos -->
-            <h2 class="titulo" class="">Cursos gratuitos</h2>
+            <h2 class="titulo">Cursos gratuitos</h2>
             <div class="cursos-sec" >
                 <div class="cursos-div tamanho-div-m" ><!-- curso em vídeo -->
                     <img src="assets-html-css/img/curso em video.jpeg" alt="Curso em Vídeo">
@@ -43,14 +58,14 @@
                 </div>
                 <div class="cursos-div tamanho-div-m"> <!-- freecodecamp -->
                     <img src="assets-html-css/img/freecodecamp.png" alt="Freecodecamp">
-                    <h4 class="titulo-curso">freeCodeCamp</h4>
+                    <h3 class="titulo-curso">freeCodeCamp</h3>
                     <p>O curso de HTML e CSS do FreeCodeCamp é um programa de aprendizagem online gratuito que ensina as habilidades básicas de codificação para iniciantes, como construir páginas da web usando HTML e CSS. O curso é dividido em módulos, começando com as estruturas básicas do HTML e progredindo para tópicos mais avançados, como criação de formulários, estilização com CSS e desenvolvimento web responsivo.</p>
                     <p class="link"><a href="https://www.freecodecamp.org/portuguese/learn" target="_blank">ACESSE AQUI</a></p>
                 </div>
                 <div class="cursos-div tamanho-div-m"><!-- Otávio miranda youtube -->
                     <img src="assets-html-css/img/otavio miranda.jpg" alt="curso html e css de otávio miranda">
-                    <h4 class="titulo-curso">Otávio Miranda</h4>
-                    <!-- ESTÁ FALTANDO DESCRIÇÃO -->
+                    <h3 class="titulo-curso">Otávio Miranda</h3>
+                    <p>O curso de Otávio Miranda sobre HTML e CSS é ensinada de forma simples, de fácil compreensão e encontra-se disponível gratuitamente em seu canal no Youtube. Com vídeos teóricos e exercícios, é ensinado sobre os elementos da HTML e seus usos, assim como também o uso das mais recentes tecnologias de estilização no CSS, como o Flexbox e o Grid Layout, para a criação de sites profissionais e responsivos.</p>
                     <p class="link"><a href="https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank">ACESSE AQUI</a></p>
                 </div>
             </div>
@@ -61,7 +76,7 @@
             <h2 class="titulo">Cursos pagos</h2>
             <div class="cursos-sec">
                 <div class="cursos-div tamanho-div-g" ><!-- origamid -->
-                    <img src="assets-html-css/img/origamid.png" alt="origamid">
+                    <img src="assets-html-css/img/origamid.jpg" alt="origamid">
                     <h3 class="titulo-curso">Origamid</h3>
                     <p>O curso de HTML e CSS do Origamid é um curso online pago que ensina a criação de páginas da web usando HTML, CSS e JavaScript. O curso é projetado para iniciantes e oferece aulas em vídeo, exercícios e desafios práticos para os alunos. O curso é dividido em módulos que cobrem desde os conceitos básicos até tópicos mais avançados, como animação CSS e design responsivo. O curso também inclui uma comunidade online onde os alunos podem compartilhar seus projetos, fazer perguntas e receber feedback. A abordagem de ensino é prática e interativa, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web com alta qualidade estética e funcionalidade.</p>
                     <p class="link"><a href="https://www.origamid.com/" target="_blank">ACESSE AQUI</a></p>
@@ -86,20 +101,86 @@
             <h2 class="titulo">Dicas de livros!</h2>
             <p id="texto-dicas-livros">Se você deseja se aprofundar em HTML e CSS e criar páginas web incríveis, confira esses livros essenciais: </p>
             <div id="livro-imagens">
-                <img src="assets-html-css/img/html css jon duckett.jpeg" alt="" class="img-livros">
-                <img src="assets-html-css/img/mauricio samy.jpg" alt="" class="img-livros">
-                <img src="assets-html-css/img/html5 mark pilgrim.jpg" alt="" class="img-livros">
-                <img src="assets-html-css/img/crie seu proprio site.jpg" alt="" class="img-livros">
-                <img src="assets-html-css/img/elisabeth robson.jpg" alt="" class="img-livros">
-                <img src="assets-html-css/img/html5 css elisabeth castro.jpg" alt="" class="img-livros">
+                <figure>
+                    <a href="https://www.google.com/search?q=html+css+jon+duckett&rlz=1C1VDKB_pt-PTBR1005BR1005&sxsrf=APwXEdfZbPfqIkOyXqPZ1peoHAacbDdrnQ:1684119115165&source=lnms&tbm=shop&sa=X&ved=2ahUKEwi0q_nMqPb-AhUArpUCHSxWA6MQ_AUoAXoECAIQAw&biw=1242&bih=561&dpr=1.1" target="_blank"><img src="assets-html-css/img/html css jon duckett.jpeg" alt="HTML&CSS. Projete e construa websites." class="img-livros"></a>
+                    <figcaption>HTML&CSS</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.google.com/search?q=fundamentos+de+html5+e+css3&rlz=1C1VDKB_pt-PTBR1005BR1005&sxsrf=APwXEddZ1eFKU_9gUnqw9KfC1bf420rJOQ:1684119240737&source=lnms&tbm=shop&sa=X&ved=2ahUKEwia1OmIqfb-AhXUtJUCHUsGAhcQ_AUoAXoECAIQAw&biw=1242&bih=561&dpr=1.1" target="_blank"><img src="assets-html-css/img/mauricio samy.jpg" alt="fundamentos de html e css3" class="img-livros"></a>
+                    <figcaption>Fundamentos de HTML5 e <br>CSS3</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.google.com/search?q=html5+mark+pilgrim+shopping&rlz=1C1VDKB_pt-PTBR1005BR1005&sxsrf=APwXEdcRwDbA0hlTtKGvN-7j-Kuv9gmqnw%3A1684119342994&ei=Lp9hZNmYPObJ1sQP3PGJ2Ao&ved=0ahUKEwjZ58q5qfb-AhXmpJUCHdx4AqsQ4dUDCA8&uact=5&oq=html5+mark+pilgrim+shopping&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjIHCCEQoAEQCjIHCCEQoAEQCjoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoFCAAQgAQ6BggAEBYQHjoFCCEQoAE6CAghEBYQHhAdSgQIQRgAUJ8VWIAgYIQhaAFwAXgAgAHTAYgBtAqSAQUwLjcuMZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp" target="_blank"><img src="assets-html-css/img/html5 mark pilgrim.jpg" alt="html5" class="img-livros"></a>
+                    <figcaption>HTML5 - Up and Running</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.google.com/search?q=crie+seu+proprio+site&rlz=1C1VDKB_pt-PTBR1005BR1005&sxsrf=APwXEdcMfs4hiE9F5wLHwMJ-iPFIh5v9xQ:1684119436841&source=lnms&tbm=shop&sa=X&ved=2ahUKEwi69armqfb-AhUxK7kGHQ79CX8Q_AUoBHoECAEQBg&biw=1242&bih=561&dpr=1.1" target="_blank"><img src="assets-html-css/img/crie seu proprio site.jpg" alt="crie seu proprio site" class="img-livros"></a>
+                    <figcaption>Crie seu próprio site</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.google.com/search?q=html+css+elisabeth+robson&sa=X&rlz=1C1VDKB_pt-PTBR1005BR1005&biw=1242&bih=561&tbm=shop&sxsrf=APwXEdf5qtkL3TsW7eFAims6fCEPTXwYjA%3A1684119441484&ei=kZ9hZKb7HLbA5OUP4aWhiAU&ved=0ahUKEwjmh8boqfb-AhU2ILkGHeFSCFEQ4dUDCAg&uact=5&oq=html+css+elisabeth+robson&gs_lcp=Cgtwcm9kdWN0cy1jYxADOgoIABAYEIAEELADOgQIIxAnOgcIABCKBRBDOg0IABCKBRCxAxCDARBDOgsIABCABBCxAxCDAToECAAQAzoFCAAQgAQ6BwgAEIAEEAo6BggAEBYQHjoHCAAQGBCABDoFCCEQoAE6CAgAEBYQHhAYOgoIABAIEB4QDRAYOgcIIRCgARAKUOKUA1iOigRg5osEaAJwAHgAgAHsAYgB1h-SAQYwLjI2LjGYAQCgAQHIAQHAAQE&sclient=products-cc" target="_blank"><img src="assets-html-css/img/elisabeth robson.jpg" alt="Use a Cabeça. Html e css" class="img-livros"></a>
+                    <figcaption>HTML e CSS</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.google.com/search?q=html+css+elisabeth+castro&sa=X&rlz=1C1VDKB_pt-PTBR1005BR1005&biw=1242&bih=561&tbm=shop&sxsrf=APwXEde42XoSct5kMdhDg7xw3-WKTkXRsQ%3A1684119512273&ei=2J9hZN2FEL-f5OUP1PGjGA&ved=0ahUKEwjd0aaKqvb-AhW_D7kGHdT4CAMQ4dUDCAg&uact=5&oq=html+css+elisabeth+castro&gs_lcp=Cgtwcm9kdWN0cy1jYxADMggIABAWEB4QGDoECCMQJzoFCAAQgAQ6BwgAEBgQgAQ6BggAEBYQHjoHCCEQoAEQCjoKCAAQCBAeEA0QGFDDBliFPmDWQGgBcAB4AIABzAGIAcEVkgEGMC4xOC4xmAEAoAEBwAEB&sclient=products-cc" target="_blank"><img src="assets-html-css/img/html5 css elisabeth castro.jpg" alt="Guia prático e virtual. Html 5 e css 3" class="img-livros"></a>
+                    <figcaption>HTML5 e CSS3</figcaption>
+                </figure>
             </div>
 
         </section>
     </main>
-    <footer class="rodape"><div class="justificado-centro">
-        <p class="texto-rodape" style="font-size: 12px">Projeto Integrador PortalTech - 2023/01<br>Grupo 02 ® - All rights reserved<br>Esperança St. 100, Cidade da Luz - Brasil<br>Contate-nos clicando <a href="Quem-somos.html" style="color: white">aqui</a>
-        </p>
-      </div></footer>
+    <footer>
+        <div class="row">
+          <div class="column">
+            <h2><img src="./assets-index/img/logo-index.jpg" class="logo-footer"><img></h2>
+              <ul>
+                <li>Portal Tech - Proz Educação 2023</li>
+                <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
+                <li>Professora: Juliana Sinnott</li>
+              </ul>
+              </div>
+                <div class="column">
+                  <h2><b>Contato</b></h2>
+                    <ul>
+                      <li>Endereço: Rua Lorem Ipsum, nº 02</li>
+                      <li>Telefone: (xx) xxxx-xxxx</li>
+                      <li>Email: email@email.com</li>
+                      <li><a href="autores.html" style="text-decoration: none; color: inherit" >Sobre nós</a></li>
+                    </ul>
+                </div> 
+                <div class="column">
+                  <h2><b>Redes Sociais</b></h2>
+                    <ul class="social-list">
+                      <li><a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-python/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                      <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-python/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                      <li><a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-python/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                      <li><a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-python/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                      <li><a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-python/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                      <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-python/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+                    </ul>               
+                  </div>    
+                  <div class="column">
+                    <h2 id="title-newsletter"><b>Newsletter</b></h2>
+                    <p>Receba nossos conteúdos em primeira mão!</p>
+                    <form>
+                      <input type="email" name="email" placeholder="Digite aqui seu email">
+                      <input type="submit" value="Inscreva-se">
+                   </form>
+                </div>
+              </div>
+              <div class="Copyright-informativo">
+                <div class="Copyright">
+                  <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
+                </div>
+                <div class="informativo">
+                  <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos e Condições de Uso</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                  </ul>
+            </div>           
+          </div>
+      </footer>
     
 </body>
 </html>
