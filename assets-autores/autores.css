@@ -13,7 +13,7 @@
       background-image: url(img-autores/backpi.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      padding-bottom: 220px;
+      padding-bottom: 100px;
   }
   
   main .flip-card { 
@@ -285,12 +285,13 @@
   
   .linha {
     display: flex;
+  
   }
   
   .linha img {
-    height: 55vh;
+    height: 90vh;
     width: 100vw;
-  
+
   }
   
   .coluna h2 {
@@ -429,3 +430,57 @@
     justify-content: space-evenly;
   
   }
+
+  input[type=text], select {
+    width: 28%;
+    padding: 7px 25px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #00a1d7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+  
+input[type=submit] {
+    width: 28%;
+    background-color: #00a1d7;
+    color: aliceblue;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+}
+  
+input[type=submit]:hover {
+    background-color: #00a1d700;
+    color: rgb(1, 255, 77);
+    border: 1px solid rgb(1, 255, 77);
+    
+} 
+
+.formularioContato{
+    padding: 40px;
+    background: url(img-autores/backform2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerForm {
+  color: aliceblue;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgb(1, 255, 77);
+}
+
+.dadosForm {
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+
