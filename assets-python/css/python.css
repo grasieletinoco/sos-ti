@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
 }
 
@@ -124,36 +126,103 @@ main{
 
 
 
-/*INICIO CURSOS*/
-
+/*INICIO PYTHON*/
 .title{
     margin: 1rem 0;
+    font-family: 'Noto Serif', serif;
+    color: #212529;
+    text-decoration:underline#ff4305;
+    font-size: 4rem;
 }
 
 .indice-content{
     display: flex;
+    border-radius: 10px;
 }
 
 .title-indice{
     width:50%;
 }
 
-.title-indice h3{
-    margin: 1.5rem 0;
+.title-indice ul li{
+    margin: 1rem 0;
+    margin-right: 10px;
+    padding: 2px;
+    border: 2px solid #e4e8ec;
+    list-style: none;
+}
+
+.title-indice ul li:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.title-indice ul li a{
+    color: #495057;
+    text-decoration: none;
+}
+
+.title-indice ul li a:hover{
+    color: #ff4305;
 }
 
 .img-content{
     width:50%;
 }
 
+.img-content img{
+    border-radius: 10px;
+}
+
 .text-content{
-    margin: 2rem 0;
-   
+    margin: 3rem 0;
+
+}
+
+.text-content h2{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.text-content h2:hover{
+    color: #ff4305;
+    cursor: pointer;
 }
 
 .text-content p{
     margin-top: 0.2rem;
     margin-bottom: 2rem;
+}
+/*FINAL PYTHON*/
+
+
+/*INICIO CURSOS*/
+.cursos-title{
+    margin-top: 5rem;
+    padding: 5px;
+    border-bottom: 10px double #ff4305;
+    color:  #343a40;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cursos-title h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-tilte{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #682ac4;
+    margin: 30px 0 15px 16px ;
+    border-left: 5px solid #ff4305;
+}
+
+.card-tilte h3{
+    margin-left: 4px;
 }
 
 .cursos-gratuitos, .cursos-pagos{
@@ -176,21 +245,59 @@ main{
     height: 300px;
     text-align: center;
     font-size: 0.85rem;
+    background-color: #F5F5F5;
+    box-shadow: inset 0 0 4px #646464;
+    border-radius: 1rem;
+
 }
 
 .card-cg img, .card-cp img{
     width: 180px;
     height: 180px;
+    border: 2px groove #6464642d;
+    border-radius: 1rem;
 }
 
 .card-body-cursos p{
     padding: 0.2rem;
 }
+
+.card-btn-cursos button{
+    height: 44px;
+    border: 0;
+    background: linear-gradient(180deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.card-btn-cursos button a{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-btn-cursos button:hover{
+    background: linear-gradient(180deg, #B221E4 0%, #5C0DC1 100%);
+    box-shadow: 0 0 4px #5C0DC1;
+}
+
 /*FINAL CURSOS*/
 
 
 
 /*INICIO LIVROS*/
+.livros-tilte{
+    padding: 5px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border-bottom: 10px double #ff4305;
+    color:  #343a40;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .livros-conteudo{
     display: flex;
     justify-content: space-evenly;
@@ -204,22 +311,55 @@ main{
     width: 410px;
     height: 250px;
     margin: 1rem 0;
+    background-color: #F5F5F5;
+    box-shadow: inset 0 0 4px #646464;
+    border-radius: 1rem;
 }
 
 .card-body-livro{
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: space-around ;  
+}
+
+.card-img-livro{
+    padding: 0.5rem;
+    border-right: 1px groove #6464642d;
 }
 
 .card-img-livro img{
     height: 100%;
+    border: 2px groove #6464642d;
+    border-radius: 1rem;
 }
 
 .card-body-livro h3{
     font-size: 1rem;
 }
+
+.card-btn-livro button{
+    height: 44px;
+    width: 200px;
+    border: 0;
+    background: linear-gradient(180deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.card-btn-livro button a{
+    padding: 15px 63px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-btn-livro button:hover{
+    background: linear-gradient(180deg, #B221E4 0%, #5C0DC1 100%);
+    box-shadow: 0 0 4px #5C0DC1;
+}
+
 /*FINAL LIVROS*/
 
 
