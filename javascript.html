@@ -1,154 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets-javascript/css/javascript.css">
     <title>JavaScript</title>
 </head>
-
 <body>
-    <header>
-        <img src="assets-javascript/img/logo_javascript.png" alt="logotipo do site">
-        <nav>
-            <ul>
-                <p>
-                    <li><a href="index.html">Página Inicial</a></li>
-                </p>
-                <p>
-                    <li><a href="Introducao.html">Introdução</a></li>
-                </p>
-                <p>
-                    <li><a href="python.html">Python</a></li>
-                </p>
-                <p>
-                    <li><a href="html-css.html">HTML/CSS</a></li>
-                </p>
-                <p>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                </p>
-                <p>
-                    <li><a href="autores.html">Autores</a></li>
-                </p>
+
+    <header class="header-content">
+
+        <div class="logo-search">
+            <div class="logo">
+                <a class="logo" href="#">LOGO</a>
+            </div>
+            <div class="search">
+                <label for="site-search">Pesquisar</label>
+                <input type="search" id="site-search" name="q">
+                <button class="btn-search">Ir</button>
+            </div>
+        </div>     
+
+        <div class="texto-header">
+            <h3>SOS T.I</h3>
+            <p>Seu Guia Na Programação</p>
+        </div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="html-css.html">HTML/CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="autores.html">Autores</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <section>
-        <center>
+    <main>
+
+        <section class="javascript">
             <h1>JavaScript</h1>
-        </center>
-        <h2>O que é JavaScript?</h2>
 
-        <p>JavaScript é uma linguagem de programação usada por desenvolvedores para fazer páginas interativas da
-            Internet.
-            As funções de JavaScript podem melhorar a experiência do usuário durante a navegação em um site, como,
-            por
-            exemplo, desde a atualização do feed na página da mídia social
-            até a exibição de animações e mapas interativos. Como uma linguagem de script do lado do cliente, ele é
-            uma
-            das tecnologias principais da World Wide Web. Por exemplo, ao navegar na Internet, é possível visualizar
-            a
-            qualquer momento um carrossel de imagens, um menu suspenso “clicar para visualizar” ou mesmo mudar
-            dinamicamente as cores dos elementos de uma página da Web. Tudo isso graças ao JavaScript.</p>
+            <div class="textos_js">
+                <div class="textos">
+                    <h2>O que é JavaScript?</h2>
+                    <p>JavaScript é uma linguagem de programação usada por desenvolvedores para fazer páginas interativas da
+                        Internet.
+                        As funções de JavaScript podem melhorar a experiência do usuário durante a navegação em um site, como,
+                        por
+                        exemplo, desde a atualização do feed na página da mídia social
+                        até a exibição de animações e mapas interativos. Como uma linguagem de script do lado do cliente, ele é
+                        uma
+                        das tecnologias principais da World Wide Web. Por exemplo, ao navegar na Internet, é possível visualizar
+                        a
+                        qualquer momento um carrossel de imagens, um menu suspenso “clicar para visualizar” ou mesmo mudar
+                        dinamicamente as cores dos elementos de uma página da Web. Tudo isso graças ao JavaScript.
+                    </p>
+                </div>
 
-        <h2>Para que serve o JavaScript?</h2>
+                <div class="textos">
+                    <h2>Para que serve o JavaScript?</h2>
+                    <ul>
+                        <li>- Desenvolvimento web</li>
+                        <li>- Desenvolvimento mobile</li>
+                        <li>- Criação de sistemas back-end</li>
+                        <li>- Games</li>
+                    </ul>
+                </div>
 
-        <ul>
-            <li>Desenvolvimento web</li>
-            <li>Desenvolvimento mobile</li>
-            <li>Criação de sistemas back-end</li>
-            <li>Games</li>
-        </ul>
+                <div class="textos">
+                    <h2>Vantagens</h2>   
+                    <p>Não é à toa que JavaScript é, na maioria das vezes, a primeira linguagem de programação que um recém
+                        desenvolvedor aprende.
+           
+                        Isso acontece porque JS é uma ótima linguagem para um primeiro contato com a programação e, por
+                        consequência, para se estudar lógica de programação.
+            
+                        Entre outros grandes benefícios de se programar em JavaScript, estão:
+                    </p>          
+                    <ul>
+                        <li>- Versatilidade da linguagem;</li>
+                        <li>- Rapidez de leitura e, portanto, rapidez de execução;</li>
+                        <li>- Sintaxe acessível;</li>
+                        <li>- Não precisa ser compilada — ou seja, os navegadores são capazes de interpretá-la por conta própria;</li>
+                        <li>- Ótima linguagem para iniciantes em programação;</li>
+                        <li>- Compatível com uma grande variedade de navegadores e plataformas;</li>
+                        <li>- Código leve;</li>
+                        <li>- Curva de aprendizagem rápida;</li>
+                        <li>- Grande comunidade ao redor do mundo.</li>   
+                    </ul>       
+                </div>
 
-        <h2>Vantagens</h2>
+                <div class="textos">
+                    <h2>Desvantagens</h2>   
+                    <p>Como tudo tem dois lados, o JS também conta com algumas desvantagens. Entre elas, estão:
+                        <ul>
+                            <li>- Poucos recursos voltados à segurança;</li>
+                            <li>- Pode conter brechas para a execução de ações maliciosas;</li>
+                            <li>- O Node.js está propenso a mais vazamento de memória em processos de execução longa.</li>
+                        </ul>
+                    </p>
+        
+                </div>
 
-        <p>Não é à toa que JavaScript é, na maioria das vezes, a primeira linguagem de programação que um recém
-            desenvolvedor aprende.
+                <div class="textos_fonte">
+                    <p>Fontes:
+                        <a href="https://aws.amazon.com/pt/what-is/javascript/#:~:text=JavaScript%20%C3%A9%20uma%20linguagem%20de,fazer%20p%C3%A1ginas%20interativas%20da%20Internet.">AWS</a>
+                    <a href="https://kenzie.com.br/blog/javascript/">Kenzie</a>
+                    </p>                
+                </div>           
+    
+            </div>
 
-            Isso acontece porque JS é uma ótima linguagem para um primeiro contato com a programação e, por
-            consequência, para se estudar lógica de programação.
+        </section>
+    
 
-            Entre outros grandes benefícios de se programar em JavaScript, estão:
+        <section class="cursos">
+            <h2>Cursos Gratuitos de JavaScript</h2>
+            <div class="card_cursos">
+                <div class="card_body">
+                    <img src="assets-javascript/img/img-curso.jpg" alt="">
+                    <div class="curso_conteudo">
+                        <h3>Curso em vídeo</h3>
+                        <p>Descrição</p>    
+                        <a href="https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm" target="_blank"><button>Acessar</button></a>    
+                    </div>
+                </div>
+    
+                <div class="card_body">
+                    <img src="assets-javascript/img/img-curso.jpg" alt="">
+                    <div class="curso_conteudo">
+                        <h3>Kenzie</h3>
+                        <p>Descrição</p>
+                        <a href="https://desafio.kenzie.com.br/?utm_term=curso%20programa%C3%A7%C3%A3o%20gratuito&utm_campaign=&utm_source=adwords&utm_medium=google-ads&hsa_acc=2166776305&hsa_cam=19650830777&hsa_grp=151465714728&hsa_ad=647320819412&hsa_src=g&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gz6KQ4W0WTkNqaZtKeZFd7mliDZhllwOiBXS6STDWF-L-FTeeTlzbBoCoUUQAvD_BwE" target="_blank"><button>Acessar</button></a>           
+                    </div>
+                </div>
+    
+                <div class="card_body">
+                    <img src="assets-javascript/img/img-curso.jpg" alt="">
+                    <div class="curso_conteudo">
+                        <h3>ûdemi</h3>
+                        <p>Descrição</p>
+                        <a href="https://www.udemy.com/pt/topic/javascript/free/" target="_blank"><button>Acessar</button></a>   
+                    </div>
+               
+                </div>
+    
+                <div class="card_body">
+                    <img src="assets-javascript/img/img-curso.jpg" alt="">
+                    <div class="curso_conteudo">
+                        <h3>Fundação Bradesco</h3>
+                        <p>Descrição</p>   
+                        <a href="https://www.ev.org.br/cursos/introducao-ao-javascript" target="_blank"><button>Acessar</button></a><br>    
+                    </div>
+                </div>
+    
+                <div class="card_body">
+                    <img src="assets-javascript/img/img-curso.jpg" alt="">
+                    <div class="curso_conteudo">
+                        <h3>Labenu</h3>
+                        <p>Descrição</p>   
+                        <a href="https://curso-javascript.labenu.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=lancamento-curso-java-2022&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gzszdxvJmdcCMmwAs8F8rhSof9C5IHeJKrbh4MuTUqabsHyl2dP63RoCWJoQAvD_BwE" target="_blank"><button>Acessar</button></a>    
+                    </div>
+                </div>   
+            </div>
+        </section>
+    
+        <section class="livros">
+            <h2>Indicações de Livros</h2>
+            <div class="card_livro">
+                <div class="livro_body">
+                    <img src="assets-javascript/img/img-livro.jpg" alt="">
+                    <div class="livro_conteudo">
+                        <h3>Livro 01</h3>
+                        <p>Descrição</p>
+                        <a href="#"> <button>Acessar</button> </a>                    
+                    </div>
+                </div>
+    
+                <div class="livro_body">
+                    <img src="assets-javascript/img/img-livro.jpg" alt="">
+                    <div class="livro_conteudo">
+                        <h3>Livro 02</h3>
+                        <p>Descrição</p>
+                        <a href="#"> <button>Acessar</button> </a>    
+                    </div>
+                </div>
+    
+                <div class="livro_body">
+                    <img src="assets-javascript/img/img-livro.jpg" alt="">
+                    <div class="livro_conteudo">
+                        <h3>Livro 03</h3>
+                        <p>Descrição</p>
+                        <a href="#"> <button>Acessar</button> </a>    
+                    </div>
+                </div>
+    
+                <div class="livro_body">
+                    <img src="assets-javascript/img/img-livro.jpg" alt="">
+                    <div class="livro_conteudo">
+                        <h3>Livro 04</h3>
+                        <p>Descrição</p>
+                        <a href="#"> <button>Acessar</button> </a>    
+                    </div>
+                </div>
+    
+                <div class="livro_body">
+                    <img src="assets-javascript/img/img-livro.jpg" alt="">
+                    <div class="livro_conteudo">
+                        <h3>Livro 05</h3>
+                        <p>Descrição</p>
+                        <a href="#"> <button>Acessar</button> </a>    
+                    </div>
+                </div>    
+            </div>           
+        </section>
 
-        <ul>
-            <li>Versatilidade da linguagem;</li>
-            <li>Rapidez de leitura e, portanto, rapidez de execução;</li>
-            <li> Sintaxe acessível;</li>
-            <li>Não precisa ser compilada — ou seja, os navegadores são capazes de interpretá-la por conta própria;</li>
-            <li>Ótima linguagem para iniciantes em programação;</li>
-            <li>Compatível com uma grande variedade de navegadores e plataformas;</li>
-            <li> Código leve;</li>
-            <li>Curva de aprendizagem rápida;</li>
-            <li> Grande comunidade ao redor do mundo.</li>
+    </main>
 
-        </ul>
+    <footer>
+        <div class="row">
 
-        </p>
+            <div class="column">
+                <h2><b>LOGO</b></h2>
+                <ul>
+                    <li>Portal Tech - Proz Educação 2023</li>
+                    <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
+                    <li>Professora: Juliana Sinnott</li>
+                </ul>
+            </div>
 
-        <h2>Desvantagens</h2>
+            <div class="column">
+                <h2><b>Contato</b></h2>
+                <ul>
+                    <li>Endereço: Rua Lorem Ipsum, nº 02</li>
+                    <li>Telefone: (xx) xxxx-xxxx</li>
+                    <li>Email: email@email.com</li>
+                </ul>
+            </div> 
 
-        <p>Como tudo tem dois lados, o JS também conta com algumas desvantagens.
+            <div class="column">
+                <h2><b>Redes Sociais</b></h2>
+                <ul class="social-list">
+                    <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-javascript/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-javascript/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-javascript/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-javascript/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-javascript/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-javascript/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+                </ul>               
+            </div>
+                    
+            <div class="column">
+                <h2 id="title-newsletter"><b>Newsletter</b></h2>
+                <p>Receba Nossos Conteúdos em Primeira Mão!</p>
+                <form>
+                    <input type="email" name="email" placeholder="Digite aqui seu email">
+                    <input type="submit" value="Inscreva-Se">
+                </form>
+            </div>
+        </div>
 
-            Entre elas, estão:
-        <ul>
-            <li>poucos recursos voltados à segurança;</li>
-            <li>Pode conter brechas para a execução de ações maliciosas;</li>
-            <li>O Node.js está propenso a mais vazamento de memória em processos de execução longa.</li>
-        </ul>
-        </p>
-    </section>
-
-    <section>
-        fontes: <a
-            href="https://aws.amazon.com/pt/what-is/javascript/#:~:text=JavaScript%20%C3%A9%20uma%20linguagem%20de,fazer%20p%C3%A1ginas%20interativas%20da%20Internet.">AWS</a>
-        <a href="https://kenzie.com.br/blog/javascript/">Kenzie</a>
-    </section>
-
-
-    <section>
-        <h3>Cursos gratuitos de JavaScript</h3>
-
-        <p><a href="https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm"
-                target="_blank"><button>Curso em vídeo</button></a><br></p>
-
-        <p><a href="https://desafio.kenzie.com.br/?utm_term=curso%20programa%C3%A7%C3%A3o%20gratuito&utm_campaign=&utm_source=adwords&utm_medium=google-ads&hsa_acc=2166776305&hsa_cam=19650830777&hsa_grp=151465714728&hsa_ad=647320819412&hsa_src=g&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gz6KQ4W0WTkNqaZtKeZFd7mliDZhllwOiBXS6STDWF-L-FTeeTlzbBoCoUUQAvD_BwE"
-                target="_blank"><button>Kenzie</button></a><br>
-        </p>
-        <p><a href="https://www.udemy.com/pt/topic/javascript/free/" target="_blank"><button>ûdemi</button></a><br>
-        </p>
-        <p><a href="https://www.ev.org.br/cursos/introducao-ao-javascript" target="_blank"><button>Fundação
-                    Bradesco</button></a><br></p>
-
-        <p><a href="https://curso-javascript.labenu.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=lancamento-curso-java-2022&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gzszdxvJmdcCMmwAs8F8rhSof9C5IHeJKrbh4MuTUqabsHyl2dP63RoCWJoQAvD_BwE"
-                target="_blank"><button>Labenu</button></a><br></p>
-
-    </section>
-
-    <section>
-        <h3>Indicações de livros para aprender mais sobre JS</h3>
-        <p>Livro 1</p>
-        <p>Livro 2</p>
-        <p>Livro 3</p>
-    </section>
-    <br>
-    <br>
-    <br>
-
-    <center>
-        <footer>
-            <p>Projeto Integrador PortalTech - 2023<br>Grupo 02 ® - All rights
-                reserved<br>Contate-nos clicando <a href="autores.html">aqui</a>
-            </p>
-        </footer>
-
-    </center>
-
-
-
-
-
+        <div class="Copyright-informativo">
+            <div class="Copyright">
+                <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
+            </div>
+            <div class="informativo">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos e Condições de Uso</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>           
+        </div>
+    </footer>
+    
 </body>
-
 </html>
