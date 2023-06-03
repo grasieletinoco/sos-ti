@@ -178,8 +178,8 @@ body {
     flex-direction: column;
     border-style: double;
     border-radius: 20px;
-    overflow: hidden;
     border-color: #4cadff;
+    overflow: hidden;
     margin: auto;
     text-align: justify;
     color: white;
@@ -258,16 +258,18 @@ body {
 .livros > p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 #livro-imagens {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.livros > p {
-    text-align: center;
-    padding-bottom: 30px;
+.card {
+    width: 10em;
 }
 
 .img-livros {
@@ -276,12 +278,19 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-figcaption {
-    padding-bottom: 30px;
+
+
+figcaption, .autor, .ano-livro {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     font-size: 0.8em;
+}
+
+.botao {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 footer{
