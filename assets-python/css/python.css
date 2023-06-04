@@ -35,10 +35,8 @@ main{
     align-items: center;
 }
 
-.logo{
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
+.logo a img{
+    height: 3rem;
 }
 
 .search{
@@ -403,6 +401,16 @@ footer div ul li{
 .column ul{
     padding: 10px 0px;
 }
+
+.logo_footer img{
+    height: 1.5rem;
+}
+
+.column a img{
+    display: block;
+    margin: 0px auto;
+}
+
 
 .social-list{
     display: flex;
