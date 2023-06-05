@@ -45,7 +45,7 @@ ___
 
   Sprint lll: Estilizar as Páginas criadas anteriormente em HTML
 
-  Sprint lV:
+  Sprint lV: Renderização Dinâmica e Validação de Formulários
   
   Sprint V:
   
@@ -54,14 +54,14 @@ ___
 
 - **Equipe:**
 
-  André https://github.com/AndreMr19
+  [André](https://github.com/AndreMr19)
 
-  Artur Herodeck https://github.com/ArturHerodeck
+  [Artur Herodeck](https://github.com/ArturHerodeck)
 
-  Bruno Ferreira https://github.com/BrunoFerreira1990
+  [Bruno Ferreira](https://github.com/BrunoFerreira1990)
 
-  Débora Carmo https://github.com/DehCarmoo
+  [Débora Carmo](https://github.com/DehCarmoo)
 
-  Grasiele Tinoco https://github.com/grasieletinoco
+  [Grasiele Tinoco](https://github.com/grasieletinoco)
 
-  Helionar Faria https://github.com/helionarfaria
+  [Helionar Faria](https://github.com/helionarfaria)
