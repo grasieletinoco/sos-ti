@@ -242,7 +242,7 @@ main{
     margin-bottom: 10px;
 }
 
-.card-cursos-gratuitos, .card-cursos-pagos{
+#card-cursos-gratuitos, #card-cursos-pagos{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -309,11 +309,10 @@ main{
     text-transform: uppercase;
 }
 
-.livros-conteudo{
+#livros-conteudo{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 
 .card-livro{
