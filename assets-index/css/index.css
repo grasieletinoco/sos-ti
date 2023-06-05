@@ -128,7 +128,7 @@ line-height: 1;
 
 main{
   margin: 0;
-  padding: 0.5rem 15rem;
+  padding: 2% 10%;
 }
 
 .main-background{
@@ -146,12 +146,23 @@ main{
   text-align: right; 
   padding: 20px;
   border-radius: 50%;
+  transition-property: heigth, width;
+  transition-duration: 0.25s;
+}
+
+.main-images:hover {
+  height: 32.5%; 
+  width: 32.5%; 
 }
 
 .main-text{
-  margin: 5%;
+  margin: auto;
   color: orange;
 
+}
+
+.hidden {
+  display: none;
 }
 
 .main-text h1{
@@ -176,10 +187,12 @@ main{
 .main-text p{
   letter-spacing: 0.5px;
   font-size: 25px; 
+  stroke: black;
   text-align: justify;
   text-indent: 50px;
   color: rgb(255, 255, 255);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-text-stroke: 0.5px black;
 }
 
 .italico{
@@ -193,93 +206,35 @@ main{
 
 /*INICIO FOOTER*/
 footer{
-    background-color: #070617;
-    color: #BEBEBE;
+  background-color: #070617;
+  color: #BEBEBE;
 }
 
 footer div ul li{
-    list-style: none;
+  list-style: none;
 }
 
 .row{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 2%;
-    height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2%;
+  height: 150px;
+}
+
+.column{
+  padding: 0px 10px;
 }
 
 .column h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: #00a1d7;
+  padding-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #00a1d7;
 }
 
 .column ul{
-    padding: 10px 0px;
-}
-
-.social-list{
-    display: flex;
-    gap: 5px;
-    justify-content: space-around;
-}
-
-.social-list li a img:hover{
-    scale: 1.2;
-}
-
-.column:nth-child(4){
-    background-color: #f8f8ff0c;
-    border-radius: 16px;
-    border: 3px double #1C1C1C;
-}
-
-#title-newsletter{
-    color: #D3D3D3;
-}
-
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input[type="email"] {   
-    border: 0;
-    padding: 0.625rem;
-    width: 230px;
-  }
-
-input[type="submit"] {
-    background-color: #00a1d7;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.625rem;
-}
-
-.Copyright-informativo{
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px inset #3b70a2;
-    font-size: 0.9rem; 
-    padding: 0.2rem 2%;
-}
-
-.informativo ul li{
-    display: inline-flex;
-    padding-left: 1rem;
-}
-
-.informativo ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.informativo ul li a:hover{
-    color: #4cadff;
-    text-decoration: underline;
+  padding: 0px 0px;
 }
 
 .logo-footer{
@@ -289,11 +244,105 @@ input[type="submit"] {
   background-size: contain;
   text-decoration: none;
   border-radius: 50%;
+} 
+.column a img{
+  display: block;
+  margin: 0px auto;
+}
+
+
+.social-list{
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+}
+
+.social-list li a img:hover{
+  scale: 1.2;
+}
+
+.column:nth-child(4){
+  background-color: #f8f8ff0c;
+  border-radius: 16px;
+  border: 3px double #1C1C1C;
+}
+
+#title-newsletter{
+  color: #D3D3D3;
+}
+
+.column p{
+  font-size: 0.9rem;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="email"] { 
+  border: 0;
+  padding: 0.3rem;
+  width: 230px;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+button[type="submit"] {
+  background-color: #00a1d7;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.3rem 0.3rem;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+.Copyright-informativo{
+  display: flex;   
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px inset #3b70a2;
+  font-size: 0.9rem; 
+  padding: 0.2rem 2%;
+}
+
+.informativo ul li{
+  display: inline-flex;
+  padding-left: 1rem;
+}
+
+.informativo ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.informativo ul li a:hover{
+  color: #4cadff;
+  text-decoration: underline;
 }
 
 footer p{
-    padding: 0.5rem 0;
-    text-align: center;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 /*FINAL FOOTER*/
 
