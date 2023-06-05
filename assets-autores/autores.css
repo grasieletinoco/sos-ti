@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif; 
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; 
+  box-sizing: border-box;
+}
   
   main {
       font-family: Arial, Helvetica, sans-serif;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      background-image: url(img-autores/backpi.png);
+      background-image: url(img-autores/backpi3.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
       padding-bottom: 100px;
+
   }
   
   main .flip-card { 
@@ -85,25 +91,23 @@
   .header-content{
     width: 100%;
     height: 300px;
-    background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../assets-autores/img-autores/img-header.jpg);
+    background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img-autores/img-header.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     position: relative;
-  }
-  
-  .logo-search{
+}
+
+.logo-search{
     display: flex ;
     justify-content: space-between;
     padding: 1rem 2%;
     align-items: center;
-  }
-  
-  .logo{
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
+}
+
+.logo a img{
+    height: 3rem;
+}
   
   .search{
     background: rgba(255, 255, 255, 0.08);
@@ -190,67 +194,63 @@
   footer{
     background-color: #070617;
     color: #BEBEBE;
-  }
-  
-  footer div ul li{
+}
+
+footer div ul li{
     list-style: none;
-  }
-  
-  .row{
+}
+
+.row{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2%;
     height: 150px;
-  }
-  
-  .column h2{
+}
+
+.column{
+    padding: 0 10px;
+}
+
+.column h2{
+    padding-top: 5px;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
     color: #00a1d7;
-  }
-  
-  .column ul{
+}
+
+.column ul{
     padding: 10px 0px;
-  }
-  
-  .social-list{
+}
+
+.logo_footer img{
+    height: 1.5rem;
+}
+
+.column a img{
+    display: block;
+    margin: 0px auto;
+}
+
+
+.social-list{
     display: flex;
     gap: 5px;
     justify-content: space-around;
-  }
-  
-  .social-list li a img:hover{
+}
+
+.social-list li a img:hover{
     scale: 1.2;
-  }
-  
-  .column:nth-child(4){
+}
+
+.column:nth-child(4){
     background-color: #f8f8ff0c;
     border-radius: 16px;
     border: 3px double #1C1C1C;
-  }
+}
   
   #title-newsletter{
     color: #D3D3D3;
-  }
-  
-  form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  input[type="email"] {   
-    border: 0;
-    padding: 0.625rem;
-    width: 230px;
-  }
-  
-  input[type="submit"] {
-    background-color: #00a1d7;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.625rem;
   }
   
   .Copyright-informativo{
@@ -428,59 +428,135 @@
   .fotos {
     display: flex;
     justify-content: space-evenly;
-  
   }
 
-  input[type=text], select {
-    width: 28%;
-    padding: 7px 25px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #00a1d7;
-    border-radius: 4px;
+ 
+.formValidado {
     box-sizing: border-box;
-    color: black;
-}
-  
-input[type=submit] {
-    width: 28%;
-    background-color: #00a1d7;
-    color: aliceblue;
-    padding: 7px 15px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: x-large;
-    font-weight: bolder;
-}
-  
-input[type=submit]:hover {
-    background-color: #00a1d700;
-    color: rgb(1, 255, 77);
-    border: 1px solid rgb(1, 255, 77);
-    
-} 
-
-.formularioContato{
-    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #202020;
+    height: 100vh;
+    display: flex;
     background: url(img-autores/backform2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 200px;
 }
 
-.headerForm {
-  color: aliceblue;
-  font-size: xx-large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 5px;
-  margin-bottom: 40px;
-  text-shadow: 1px 1px 3px rgb(1, 255, 77);
-}
-
-.dadosForm {
-  color: aliceblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: larger;
-}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: url(img-autores/backBlack.jpg);
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    margin-top: 50px;
+  }
+  
+  .caixaTexto {
+    background-color: mintcream;
+    outline: none;
+    border: solid 1px darkgray;
+  
+  }
+  
+  .caixaTexto:focus {
+    border: solid 1.5px black;
+    transition: 0.5s;
+  }
+  
+  .inputsForm {
+    background-color: mintcream;
+    outline: none;
+    border: solid 1px darkgrey;
+  }
+  
+  .inputsForm:focus {
+    border: solid 1.5px black;
+    transition: 0.5s;
+    background-color: rgb(225, 255, 225);
+  }
+  
+  .optionSac {
+    padding: .3rem;
+    background-color: mintcream;
+    outline: none;
+    border: solid 1px darkgrey;
+  }
+  
+  .optionSac:focus {
+    border: solid 1.5px black;
+    transition: 1.5s;
+    background-color: rgb(225, 255, 225);
+  }
+  
+  .nomesForm {
+    font-size: 1.rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 3px #983dff;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    margin-bottom: .2rem;
+    position: relative;
+  }
+  
+  label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+  
+  input {
+    padding: .2rem .5rem;
+  }
+  
+  .helper-text {
+    display: none;
+    font-size: .8rem;
+    color: white;
+    text-align: right;
+    text-shadow: 1px 1px 2px black, 0 0 10px red, 0 0 5px blue;
+  }
+  
+  .buttonForm {
+    width: 150px;
+    height: 50px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 600;
+    background-color:mintcream;
+    border: solid 1px palegreen;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+  
+  .buttonForm:hover {
+    background-color: palegreen;
+    border: solid 2px white;
+  }
+  
+  input.error {
+    border: solid 1px red;
+    background-color: lightcoral;
+    color: black;
+  }
+  
+  input.correct {
+    background-color: palegreen;
+    border: solid 2px black;;
+    color: black;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
 
