@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets-python/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets-python/css/python.css">
+    <script src="assets-python/js/python.js" defer></script>
     <title>Python</title>
 </head>
 <body>
@@ -527,9 +528,10 @@
                 <h2 id="title-newsletter"><b>Newsletter</b></h2>
                 <p>Receba Nossos Conteúdos em Primeira Mão!</p>
                 <form>
-                    <input type="email" name="email" placeholder="Digite aqui seu email">
-                    <input type="submit" value="Inscreva-Se">
+                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email">                   
+                    <button type="submit">Inscreva-Se</button> 
                 </form>
+                <p id="email-helper" class="helper-text">Mensagem de Ajuda</p>
             </div>
         </div>
 

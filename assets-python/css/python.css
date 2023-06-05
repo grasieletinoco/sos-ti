@@ -446,18 +446,40 @@ form{
     justify-content: center;
     align-items: center;
 }
-input[type="email"] {   
+input[type="email"] { 
     border: 0;
     padding: 0.3rem;
     width: 230px;
   }
 
-  input[type="submit"] {
+  .helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+
+  button[type="submit"] {
     background-color: #00a1d7;
     color: #fff;
     cursor: pointer;
     border: 0;
     padding: 0.3rem 0.3rem;
+  }
+
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
   }
 
 .Copyright-informativo{
