@@ -1,3 +1,4 @@
+//INICIO NEWSLETTER
 function togglePopup(input, label) {
 
   // Mostrar Popup de Campo Obrigatório
@@ -49,3 +50,4 @@ btnSubmit.addEventListener("click", (e) =>{
     alert("Você foi Inscrito com Sucesso!")
   }
 })
+//FIM NEWSLETTER
