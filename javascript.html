@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets-base/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets-javascript/css/javascript.css">
+    <link rel="stylesheet" href="assets-base/css/base.css">
+    <script src="assets-base/js/base.js" defer></script>
     <title>JavaScript</title>
 </head>
 <body>
@@ -13,7 +16,7 @@
 
         <div class="logo-search">
             <div class="logo">
-                <a class="logo" href="index.html"> <img src="assets-javascript/img/logo-sosti.png" alt=" S.O.S TI"> </a>
+                <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
             </div>
             <div class="search">
                 <label for="site-search">Pesquisar</label>
@@ -230,7 +233,7 @@
         <div class="row">
 
             <div class="column">
-                <a class="logo_footer" href="index.html"> <img src="assets-javascript/img/logo-sosti.png" alt=" S.O.S TI"> </a>
+                <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
                 <ul>
                     <li>Portal Tech - Proz Educação 2023</li>
                     <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
@@ -250,12 +253,12 @@
             <div class="column">
                 <h2><b>Redes Sociais</b></h2>
                 <ul class="social-list">
-                    <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-javascript/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
-                    <li> <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-javascript/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
-                    <li> <a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-javascript/img/social-media-github.png" width="30px" height="30px"> </a></li>
-                    <li> <a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-javascript/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
-                    <li> <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-javascript/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
-                    <li> <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-javascript/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
                 </ul>               
             </div>
                     
@@ -263,11 +266,13 @@
                 <h2 id="title-newsletter"><b>Newsletter</b></h2>
                 <p>Receba Nossos Conteúdos em Primeira Mão!</p>
                 <form>
-                    <input type="email" name="email" placeholder="Digite aqui seu email">
-                    <input type="submit" value="Inscreva-Se">
+                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email">                   
+                    <button type="submit">Inscreva-Se</button> 
                 </form>
+                <p id="email-helper" class="helper-text">Mensagem de Ajuda</p>
             </div>
         </div>
+
 
         <div class="Copyright-informativo">
             <div class="Copyright">
