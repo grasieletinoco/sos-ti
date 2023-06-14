@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 *{
     margin: 0;
@@ -9,134 +10,20 @@
 }
 
 
-/*INICIO HEADER*/
-main{
-    max-width: 1300px;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.header-content{
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/img-header.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-}
-
-.logo-search{
-    display: flex ;
-    justify-content: space-between;
-    padding: 1rem 2%;
-    align-items: center;
-}
-
-.logo a img{
-    height: 3rem;
-}
-
-.search{
-    background: rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
-    backdrop-filter: blur(5px);
-    padding: 1.2rem;
-    border-radius: 10px;
-}
-
-.btn-search{
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 20px;
-    height: 28px;
-}
-
-#site-search{
-    border: 0;
-    height: 28px;
-    border-radius: 5px;
-}
-
-.texto-header{
-    color: #F5F5F5;
-    text-align: center;
-    font-family: 'Righteous', cursive;
-}
-
-.texto-header h3{
-    letter-spacing: 6px;
-    font-size: 4rem;
-    font-family: 'Righteous', cursive;
-    text-shadow: 3px 2px 0px #983dff;
-}
-
-.texto-header p{
-    letter-spacing: 3px;
-    font-size: 1rem;
-    color: #D3D3D3;
-}
-
-.navbar{
-    padding: 0 2%;
-    position: absolute;
-	bottom: 0;
-	height: 60px;
-	line-height: 60px;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.616);
-}
-
-.navbar a{
-    color: #FFFFFF;
-	display: inline-block;
-	padding: 10px 15px;
-	line-height: 1;
-    text-decoration: none;
-}
-
-.menu{
-    display: flex;
-    text-transform: uppercase;
-    justify-content: space-between;
-    align-content: flex-end;
-}
-
-.menu li {
-    list-style-type: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #4cadff;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.menu li a:hover{
-    color: #983dff;
-    background-color: #4caeff18;
-    border-radius: 10px;
-}
-/*FINAL HEADER*/
-
 /*INICIO CONTEÚDO JAVASCRIPT*/
 h1{
-    color: #380877;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3.5rem;
-    text-shadow: 2px 5px 5px #983dff;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    color: #440a8f;
+    font-family: 'Staatliches', cursive; 
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .textos{
-    background-color: #f2f2f2;
     margin: 1.5rem 0;
     padding: 20px;
-    background: linear-gradient(#f2f2f2, #d1d1d1)padding-box,
-    linear-gradient(45deg, hsl(269, 84%, 33%), #FF4500)border-box;
-    border-radius: 10px;
-    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    box-shadow: inset 0 0 4px #646464;
+    border-radius: 1rem;
 }
 
 .textos h2{
@@ -152,12 +39,13 @@ h1{
 
 /*INICIO CONTEÚDO CURSOS*/
 .cursos h2{
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 1rem;
-    color: #983dff;
+    color: #440a8f;
+    text-decoration: underline double #FF4500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    font-size: xx-large;
+    font-size: 1.5rem;
+    font-weight: 900 ;
 }
 .card_cursos{
     display: flex;
@@ -165,218 +53,131 @@ h1{
 }
 
 .card_body{
-    border: 4px solid #e8e8e8;
-    border-radius: 10px;
+    width: 210px;
+    height: 290px;
     padding: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
     background-color: #f2f2f2;
+    box-shadow: inset 0 0 4px #646464;
+    border-radius: 1rem;
 }
 
 .card_body img {
-    height: 200px;
-    width: 200px;
+    margin-top: 5px;
+    width: 180px;
+    height: 180px;
+    border: 2px groove #6464642d;
+    border-radius: 1rem;
 }
 
-.livro_body img {
+.curso_body img {
     height: 250px;
     width: 200px;
 }
 
 .curso_conteudo{
     text-align: center;
+    padding: 0.3rem;
 }
 
-.curso_conteudo h2{
-    padding: 5px;
+.curso_conteudo h3{
+    padding: 8px;
 }
 
-.curso_conteudo p{
-    padding-bottom: 5px;
-}
-
-.curso_conteudo a button{
+.curso_conteudo button{
+    height: 40px;
     width: 120px;
-    height: 25px;
     border: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
+    background: linear-gradient(180deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
     border-radius: 5px;
-    background-color: #CD950C;
+    text-transform: uppercase;
 }
 
-.curso_conteudo a button:hover{
-    background: #f1b10e;
+.curso_conteudo button a {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.curso_conteudo button:hover{
+    background: linear-gradient(180deg, #B221E4 0%, #5C0DC1 100%);
+    box-shadow: 0 0 4px #5C0DC1;
 }
 /*FINAL CONTEÚDO CURSOS*/
 
 
 /*INICIO CONTEÚDO LIVROS*/
 .livros h2{
-    margin-top: 150px;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-bottom: 1rem;
-    color: #983dff;
+    text-decoration: underline double #FF4500;
+    color: #440a8f;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: xx-large;
+    font-size: 1.5rem;
+    font-weight: 900 ;
 }
 
 .card_livro{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .livro_body{
-    border-radius: 5px;
-    border-bottom: 10px solid #666666;
-    border: 4px solid #e8e8e8;
-    border-radius: 10px;
-    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 220px;
+    height: 380px;
+    box-shadow: inset 0 0 4px #646464;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.livro_body img{
+    margin-top: 10px;
+    border: 2px groove #6464642d;
+    border-radius: 1rem;
+    width: 200px;
+    height: 280px;
 }
 
 .livro_conteudo{
     text-align: center;
 }
 
-.livro_conteudo h2{
+.livro_conteudo h3{
+    margin: 5px;
     padding: 5px;
+    font-size: 0.8rem;
 }
 
-.livro_conteudo p{
-    padding-bottom: 5px;
-}
-
-.livro_conteudo a button{
-    width: 120px;
-    height: 25px;
+.livro_conteudo button{
+    margin-bottom: 10px;
+    height: 44px;
+    width: 170px;
     border: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
+    background: linear-gradient(180deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
     border-radius: 5px;
-    background-color: #CD950C;
-    margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
-.livro_conteudo a button:hover{
-    background: #f1b10e;
+.livro_conteudo button a{
+    padding: 15px 63px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
 }
 
+.livro_conteudo button:hover{
+    background: linear-gradient(180deg, #B221E4 0%, #5C0DC1 100%);
+    box-shadow: 0 0 4px #5C0DC1;
+}
 
 /*FINAL CONTEÚDO LIVROS*/
-
-
-
-/*INICIO FOOTER*/
-footer{
-    background-color: #070617;
-    color: #BEBEBE;
-}
-
-footer div ul li{
-    list-style: none;
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 2%;
-    height: 150px;
-}
-
-.column{
-    padding: 0 10px;
-}
-
-.column h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: #00a1d7;
-}
-
-.column ul{
-    padding: 10px 0px;
-}
-
-.logo_footer img{
-    height: 1.5rem;
-}
-
-.column a img{
-    display: block;
-    margin: 0px auto;
-}
-
-.social-list{
-    display: flex;
-    gap: 5px;
-    justify-content: space-around;
-}
-
-.social-list li a img:hover{
-    scale: 1.2;
-}
-
-.column:nth-child(4){
-    background-color: #f8f8ff0c;
-    border-radius: 16px;
-    border: 3px double #1C1C1C;
-}
-
-#title-newsletter{
-    color: #D3D3D3;
-}
-
-.column p{
-    font-size: 0.9rem;
-}
-
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input[type="email"] {   
-    border: 0;
-    padding: 0.625rem;
-    width: 230px;
-  }
-
-  input[type="submit"] {
-    background-color: #00a1d7;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.625rem;
-  }
-
-.Copyright-informativo{
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px inset #3b70a2;
-    font-size: 0.9rem; 
-    padding: 0.2rem 2%;
-}
-
-.informativo ul li{
-    display: inline-flex;
-    padding-left: 1rem;
-}
-
-.informativo ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.informativo ul li a:hover{
-    color: #4cadff;
-    text-decoration: underline;
-}
-
-footer p{
-    padding: 0.5rem 0;
-    text-align: center;
-}
-/*FINAL FOOTER*/
