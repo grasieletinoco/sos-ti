@@ -11,6 +11,13 @@
 }
 
 /*INICIO PYTHON*/
+
+main{
+    max-width: 1300px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
 .title{
     margin: 1rem 0;
     font-family: 'Noto Serif', serif;
