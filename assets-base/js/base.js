@@ -44,10 +44,44 @@ const checkInputs = {
 
 btnSubmit.addEventListener("click", (e) =>{
   if (checkInputs.emailInput == false) {
-    e.preventDefault()
-    alert('O Email Precisa Ser Preenchido Corretamente')
+    errorSubmitModal()
   } else {
-    alert("Você foi Inscrito com Sucesso!")
+    correctSubmitModal()
   }
+  e.preventDefault()
+  Submit();
 })
+
+// LIMPAR CAMPOS
+function limparCampos(){
+  document.getElementById('email').value = '';
+  emailInput.classList.remove('correct');
+}
+
+// MODAL ERROR SUBMIT
+function errorSubmitModal(){
+  const modal = document.getElementById('error_submit')
+  modal.classList.add('mostrar')
+
+  modal.addEventListener('click', (e) =>{
+    if (e.target.id == 'error_submit' || e.target.id == "fechar"){
+      modal.classList.remove('mostrar')
+      localStorage.fechaModal = 'error_submit'
+    }
+  })
+}
+
+// MODAL CORRECT SUBMIT
+function correctSubmitModal(){
+  const modal = document.getElementById('correct_submit')
+  modal.classList.add('mostrar')
+
+  modal.addEventListener('click', (e) =>{
+    if (e.target.id == 'correct_submit' || e.target.id == "fechar"){
+      modal.classList.remove('mostrar')
+      localStorage.fechaModal = 'correct_submit'
+    }
+  })
+}
+
 //FIM NEWSLETTER
