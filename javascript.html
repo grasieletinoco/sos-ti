@@ -242,13 +242,15 @@
                 <h2 id="title-newsletter"><b>Newsletter</b></h2>
                 <p>Receba Nossos Conteúdos em Primeira Mão!</p>
                 <form>
-                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email">                   
-                    <button type="submit">Enviar</button> 
-                </form>
-                <p id="email-helper" class="helper-text">Mensagem de Ajuda</p>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
+                        <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
+                   </div>                  
+                    <button type="submit">Enviar</button>       
+                </form>               
             </div>
-        </div>
 
+        </div>
 
         <div class="Copyright-informativo">
             <div class="Copyright">
@@ -263,6 +265,24 @@
             </div>           
         </div>
     </footer>
-    
+
+    <div class="modal_submit">
+
+        <div id="error_submit" class="error_submit">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <p>O Email Precisa Ser Preenchido Corretamente</p>
+            </div>
+        </div>
+
+        <div id="correct_submit" class="correct_submit">
+            <div class="modal">
+                <button class="fechar" id="fechar" onclick="limparCampos();">X</button>
+                <p>Você foi Inscrito com Sucesso!</p>
+            </div>
+        </div>
+
+    </div>
+ 
 </body>
 </html>
