@@ -7,6 +7,7 @@ function cursos_gratuitos() {
       titulo: "FreeCodeCamp",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://www.freecodecamp.org',
     },
 
     card02: { 
@@ -14,6 +15,7 @@ function cursos_gratuitos() {
       titulo: "Curso em Vídeo",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://www.cursoemvideo.com',
     },
 
     card03: { 
@@ -21,6 +23,7 @@ function cursos_gratuitos() {
       titulo: "Microsoft Learn",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://learn.microsoft.com/pt-br/training',
     },
 
     card04: { 
@@ -28,6 +31,7 @@ function cursos_gratuitos() {
       titulo: "Devaria",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://www.devaria.com.br',
     },
 
     card05: {
@@ -35,6 +39,7 @@ function cursos_gratuitos() {
       titulo: "Fábrica de Gênios",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://academyfg.com',
     },
 
     card06: {
@@ -42,6 +47,7 @@ function cursos_gratuitos() {
       titulo: "Eu Capacito",
       descricao: "Cursos Gratuitos",
       botao: "Acessar Plataforma",
+      link:'https://eucapacito.com.br',
     },
   }
 
@@ -65,7 +71,7 @@ function cursos_gratuitos() {
       '</div>' +
       '<div class="card-btn-cursos">' +
       '<button>' +
-      '<a>' +
+      '<a href="'+cards_cg[card].link+'" target="_blank">' +
       cards_cg[card].botao +
       '</a>' +
       '</button>' +
@@ -88,6 +94,7 @@ function cursos_pagos() {
       titulo: "DIO",
       descricao: "Cursos Gratuitos/Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.dio.me',
     },
 
     card02: { 
@@ -95,6 +102,7 @@ function cursos_pagos() {
       titulo: "Rocketseat",
       descricao: "Cursos Gratuitos/Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.rocketseat.com.br',
     },
 
     card03: { 
@@ -102,6 +110,7 @@ function cursos_pagos() {
       titulo: "DevMedia",
       descricao: "Cursos Gratuitos/Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.devmedia.com.br/cursos',
     },
 
     card04: { 
@@ -109,6 +118,7 @@ function cursos_pagos() {
       titulo: "Alura",
       descricao: "Cursos Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.alura.com.br',
     },
 
     card05: {
@@ -116,6 +126,7 @@ function cursos_pagos() {
       titulo: "Code Cademy",
       descricao: "Cursos Gratuitos/Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.codecademy.com/catalog/language/python',
     },
 
     card06: {
@@ -123,6 +134,7 @@ function cursos_pagos() {
       titulo: "Cod3r",
       descricao: "Cursos Gratuitos/Pagos",
       botao: "Acessar Plataforma",
+      link:'https://www.cod3r.com.br',
     },
   }
 
@@ -146,7 +158,7 @@ function cursos_pagos() {
       '</div>' +
       '<div class="card-btn-cursos">' +
       '<button>' +
-      '<a>' +
+      '<a href="'+cards_cp[card].link+'" target="_blank">' +
       cards_cp[card].botao +
       '</a>' +
       '</button>' +

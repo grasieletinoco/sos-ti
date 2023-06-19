@@ -7,6 +7,7 @@ function livros() {
       descricao: "Uma introdução prática e baseada em projetos a programação",
       info:"Edição: Português <br> Autor: Eric Matthes",
       botao: "Visitar Site",
+      link:'https://a.co/d/e6Dg4nQ',
     },
 
     card02: { 
@@ -15,6 +16,7 @@ function livros() {
       descricao: "Programação prática para verdadeiros iniciantes",
       info:"Edição: Português <br> Autor: Al Sweigart",
       botao: "Visitar Site",
+      link:'https://a.co/d/9jOil09',
     },
 
     card03: { 
@@ -23,6 +25,7 @@ function livros() {
       descricao: "Tratamento de dados com Pandas, NumPy e IPython",
       info:"Edição: Português <br> Autor: Wes McKinney",
       botao: "Visitar Site",
+      link:'https://a.co/d/9V4uja1',
     },
 
     card04: { 
@@ -31,6 +34,7 @@ function livros() {
       descricao: "Cursos Gratuitos",
       info:"Edição: Português <br> Autor: Luciano Ramalho",
       botao: "Visitar Site",
+      link:'https://a.co/d/f8VZIbl',
     },
 
     card05: {
@@ -39,6 +43,7 @@ function livros() {
       descricao: "Pense como um cientista da computação",
       info:"Edição: Português <br> Autor: Allen B. Downey",
       botao: "Visitar Site",
+      link:'https://a.co/d/dn7BXgM',
     },
 
     card06: {
@@ -47,6 +52,7 @@ function livros() {
       descricao: "Algoritmos e Lógica de Programação Para Iniciantes",
       info:"Edição: Português <br> Autor: Nilo Ney Coutinho Menezes",
       botao: "Visitar Site",
+      link:'https://a.co/d/cfIXLEL',
     },
 
     card07: {
@@ -55,6 +61,7 @@ function livros() {
       descricao: "Coletando mais dados da web moderna",
       info:"Edição: Português <br> Autor: Ryan Mitchell",
       botao: "Visitar Site",
+      link:'https://a.co/d/fwxkrQ6',
     },
 
     card08: { 
@@ -63,6 +70,7 @@ function livros() {
       descricao: "Linguagem Orientada a Objetos",
       info:"Edição: Português, <br> Autor: Mark Lutz",
       botao: "Visitar Site",
+      link:'https://a.co/d/fYa1n6i',
     },
 
     card09: { 
@@ -71,6 +79,7 @@ function livros() {
       descricao: "Conceitos, ferramentas e técnicas para a construção de sistemas inteligentes",
       info:"Edição: Português <br> Autor: Aurélien Géron",
       botao: "Visitar Site",
+      link:'https://a.co/d/6KB6eOl',
     },
 
     card10: { 
@@ -79,6 +88,7 @@ function livros() {
       descricao: "Desenvolvendo aplicações web com Python",
       info:"Edição: Português <br> Autor: Miguel Grinberg",
       botao: "Visitar Site",
+      link:'https://a.co/d/3Quluq1',
     },
 
     card11: {
@@ -87,6 +97,7 @@ function livros() {
       descricao: "Test-Driven Development (Desenvolvimento Orientado a Testes) com Pytho",
       info:"Edição: Português <br> Autor: Harry J. W. Percival",
       botao: "Visitar Site",
+      link:'https://a.co/d/0zoztlc',
     },
 
     card12: {
@@ -95,6 +106,7 @@ function livros() {
       descricao: "Aprendizado didático, com exemplos e exercícios práticos",
       info:"Edição: Português <br> Autor: Sérgio Luiz Banin",
       botao: "Visitar Site",
+      link:'https://a.co/d/bW6zijp',
     },
   }
 
@@ -120,7 +132,7 @@ function livros() {
       '</p>' +
       '<div class="card-btn-livro">' +
       '<button>' +
-      '<a>' +
+      '<a href="'+cards_livros[card].link+'" target="_blank">' +
       cards_livros[card].botao +
       '</a>' +
       '</div>' +
