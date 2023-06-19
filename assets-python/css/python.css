@@ -115,7 +115,7 @@ main{
     font-family: 'Oswald', sans-serif;
 }
 
-.card-tilte{
+.card-title{
     font-size: 1.1rem;
     text-transform: uppercase;
     color: #682ac4;
@@ -123,12 +123,11 @@ main{
     border-left: 5px solid #ff4305;
 }
 
-.card-tilte h3{
+.card-title h3{
     margin-left: 4px;
 }
 
 .cursos-gratuitos, .cursos-pagos{
-    height: 340px;
     justify-content: center;
     margin-bottom: 10px;
 }
@@ -136,7 +135,8 @@ main{
 #card-cursos-gratuitos, #card-cursos-pagos{
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card-cg, .card-cp{
@@ -192,7 +192,7 @@ main{
 
 
 /*INICIO LIVROS*/
-.livros-tilte{
+.livros-title{
     padding: 5px;
     margin-top: 5rem;
     margin-bottom: 1rem;
