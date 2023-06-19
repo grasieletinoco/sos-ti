@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS</title>
     <link rel="stylesheet" href="assets-html-css/css/style.css">
+    <link rel="stylesheet" href="assets-base/css/base.css">
     <script src="assets-html-css/js/script.js" defer></script>
     
 </head>
@@ -14,7 +15,7 @@
 
     <div class="logo-search">
         <div class="logo">
-            <a class="logo" href="index.html"> <img src="assets-javascript/img/logo-sosti.png" alt=" S.O.S TI"> </a>
+            <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
         </div>
         <div class="search">
             <label for="site-search">Pesquisar</label>
@@ -111,57 +112,75 @@
         </section>
     </main>
     <footer>
-        <div class="row">
+      <div class="row">
+
           <div class="column">
-            <h2><img src="./assets-index/img/logo-index.jpg" class="logo-footer"><img></h2>
+              <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
               <ul>
-                <li>Portal Tech - Proz Educação 2023</li>
-                <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
-                <li>Professora: Juliana Sinnott</li>
+                  <li>Portal Tech - Proz Educação 2023</li>
+                  <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
+                  <li>Professora: Juliana Sinnott</li>
               </ul>
-              </div>
-                <div class="column">
-                  <h2><b>Contato</b></h2>
-                    <ul>
-                      <li>Endereço: Rua Lorem Ipsum, nº 02</li>
-                      <li>Telefone: (xx) xxxx-xxxx</li>
-                      <li>Email: email@email.com</li>
-                      <li><a href="autores.html" style="text-decoration: none; color: inherit" >Sobre nós</a></li>
-                    </ul>
-                </div> 
-                <div class="column">
-                  <h2><b>Redes Sociais</b></h2>
-                    <ul class="social-list">
-                      <li><a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-python/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
-                      <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-python/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
-                      <li><a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-python/img/social-media-github.png" width="30px" height="30px"> </a></li>
-                      <li><a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-python/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
-                      <li><a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-python/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
-                      <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-python/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
-                    </ul>               
-                  </div>    
-                  <div class="column">
-                    <h2 id="title-newsletter"><b>Newsletter</b></h2>
-                    <p>Receba nossos conteúdos em primeira mão!</p>
-                    <form>
-                      <input type="email" name="email" placeholder="Digite aqui seu email">
-                      <input type="submit" value="Inscreva-se">
-                   </form>
-                </div>
-              </div>
-              <div class="Copyright-informativo">
-                <div class="Copyright">
-                  <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
-                </div>
-                <div class="informativo">
-                  <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos e Condições de Uso</a></li>
-                    <li><a href="#">Política de Cookies</a></li>
-                  </ul>
-            </div>           
           </div>
-      </footer>
-    
+
+          <div class="column">
+              <h2><b>Redes Sociais</b></h2>
+              <ul class="social-list">
+                  <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                  <li> <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                  <li> <a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                  <li> <a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                  <li> <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                  <li> <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+              </ul>               
+          </div>
+                  
+          <div class="column">
+              <h2 id="title-newsletter"><b>Newsletter</b></h2>
+              <p>Receba Nossos Conteúdos em Primeira Mão!</p>
+              <form>
+                  <div>
+                      <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
+                      <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
+                 </div>                  
+                  <button type="submit">Enviar</button>       
+              </form>               
+          </div>
+
+      </div>
+
+      <div class="Copyright-informativo">
+          <div class="Copyright">
+              <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
+          </div>
+          <div class="informativo">
+              <ul>
+                  <li><a href="#">Política de Privacidade</a></li>
+                  <li><a href="#">Termos e Condições de Uso</a></li>
+                  <li><a href="#">Política de Cookies</a></li>
+              </ul>
+          </div>           
+      </div>
+  </footer>
+
+  <div class="modal_submit">
+
+      <div id="error_submit" class="error_submit">
+          <div class="modal">
+              <button class="fechar" id="fechar">X</button>
+              <p>O Email Precisa Ser Preenchido Corretamente</p>
+          </div>
+      </div>
+
+      <div id="correct_submit" class="correct_submit">
+          <div class="modal">
+              <button class="fechar" id="fechar" onclick="limparCampos();">X</button>
+              <p>Você foi Inscrito com Sucesso!</p>
+          </div>
+      </div>
+
+  </div>
+
+  
 </body>
 </html>
