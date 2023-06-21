@@ -121,8 +121,11 @@
 }
 
 body {
-    background-color: #8615bd;
+    /*background-color: #8615bd;*/
+    background-image: url(../img/5106989.jpg);
+    background-size: cover;
  }
+
 
  .titulo {
     font-size: 1.7em;
@@ -136,7 +139,7 @@ body {
 
 .sobre {
     font-size: 1.3em;
-    width: 50em;
+    width: 79%;
     margin: auto;
     margin-bottom: 15px;
     text-indent: 50px;
@@ -155,19 +158,19 @@ body {
 }
 
 .secao {
-    border-radius: 20px;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
 .cursos-sec {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .cursos-div {
-    width: 20em;
+    width: 28%;
     display: flex;
     flex-direction: column;
     border-style: double;
@@ -198,13 +201,14 @@ body {
 }
 
 .tamanho-div-g {
-    height: 48em;
+    height: 45em;
+    /*height: 100%;*/
 }
 
 .cursos-div p {
     width: 90%;
     margin:auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -240,7 +244,7 @@ body {
 }
 
 .livros {
-    width: 71em;
+    width: 80%;
     margin: auto;
 
 }
