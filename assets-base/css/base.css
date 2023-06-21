@@ -336,7 +336,7 @@ footer p{
   text-align: center;
   line-height: 50px;
   border-radius: 4px;
-
+  cursor: pointer;
 }
 
 .visible:hover {
