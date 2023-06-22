@@ -87,14 +87,15 @@ function correctSubmitModal(){
 //FIM NEWSLETTER
 
 
+
 //INICIO BUTTON BACK TO TOP
 var btnTop = document.querySelector('#button_top');
 
   var btnReveal = function () { 
     if (window.scrollY > 300) {
-      btnTop.classList.add('visible');
+      btnTop.classList.add('visible-button');
     } else {
-      btnTop.classList.remove('visible');
+      btnTop.classList.remove('visible-button');
     }    
   }  
 

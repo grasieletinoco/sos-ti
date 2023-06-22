@@ -322,7 +322,7 @@ footer p{
 #button-top {
   display: none;
 }
-.visible{
+.visible-button{
   display: block;
   position: fixed;
   bottom: 13rem;
@@ -337,9 +337,10 @@ footer p{
   line-height: 50px;
   border-radius: 4px;
   cursor: pointer;
+
 }
 
-.visible:hover {
+.visible-button:hover {
   background-color: #FF9800;
 }
 /*FINAL BUTTON BACK TO TOP*/
