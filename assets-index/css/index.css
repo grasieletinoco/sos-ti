@@ -1,71 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto' sans-serif; 
-  box-sizing: border-box;
-}
-
 /*INICIO MAIN */
-
-main{
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  padding: 1rem 0;
-}
-.main-background{
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/background-main.jpg);
-  background-size: cover;
-}
-
 .main-images{
   display: flex;
-  margin: auto; 
-  height: 30%; 
-  width: 30%; 
-  text-align: right; 
+  margin: auto;
+  width: 100%; 
+  max-width: 350px;
   padding: 20px;
   border-radius: 50%;
-  transition-property: heigth, width;
-  transition-duration: 0.25s;
+  transition-duration: 1s;
 }
 
 .main-images:hover {
-  height: 32.5%; 
-  width: 32.5%; 
+  scale: 1.1;
+  cursor: pointer;
 }
 
-.main-text{
-  margin: auto;
-  color: orange;
-  padding-left: 5%;
-  padding-right: 5%;
+#parabens{
+  color: #495057 ;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
-#texto1 {
-  padding-top: 100px;
+#texto1{
+  padding: 2rem;
 }
 
-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#texto1 p, #texto2 p, #texto3 p{
+  padding: 10px;
+}
+
+#texto3{
+  margin-bottom: 3rem
 }
 
 .formcalc {
+  display: flex;
   flex-direction: column;
+  padding: 1rem;
+  gap: 10px;
 }
 
-.label-calc {
-  margin: 3px;
+.label-calc{
+  margin: auto;
+  width: 210px;
+  background-color: #ff4305;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.number{
+  font-size: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#input1, #input2{
+  border: 0;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+#btnCalcular{
+  width: 210px;
+  height: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  box-shadow: inset 0 0 4px #646464;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .hidden {
@@ -73,38 +80,40 @@ form {
 }
 
 .main-text h1{
-  font-size: 45px; 
-  text-decoration: underline;
-  text-align: center; 
-  font-family: 'Righteous', cursive;
+  color: #212529;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration:underline#ff4305;
 }
 
 .main-text h2{
-  font-size: 40px; 
   text-align: center; 
-  font-family: 'Righteous', cursive;  
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  color: #495057 ;
+  padding-bottom: 1rem;
 }
 
 .main-text h3{
-  font-size: 35px; 
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 2rem; 
   text-align: center; 
-  font-family: 'Righteous', cursive;
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  color: #343a40;
 }
 
 .main-text p{
-  letter-spacing: 0.5px;
-  font-size: 25px; 
-  stroke: black;
-  text-align: justify;
-  text-indent: 50px;
-  color: rgb(255, 255, 255);
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  -webkit-text-stroke: 0.5px black;
+  font-size: 1.2rem;
 }
-
-.italico{
+span{
+  color: #5C0DC1;
+  font-weight: 900;
   font-style: italic;
-  font-weight: bold;
 }
-
 /*FINAL MAIN*/

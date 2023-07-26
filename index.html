@@ -4,206 +4,187 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets-base/img/logo-sosti.png">
-  <link rel="shortcut icon" href="assets-base/img/favicon.ico">
-  <Link rel="stylesheet" href="assets-base/css/base.css" media="screen">
-  <link rel="stylesheet" href="assets-index/css/index.css" media="screen">
-  <script src="assets-index/js/index.js" defer></script>
+  <link rel="shortcut icon" href="./assets-base/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets-base/css/base.css">
+  <link rel="stylesheet" href="assets-index/css/index.css">
   <script src="assets-base/js/base.js" defer></script>
+  <script src="assets-index/js/index.js" defer></script>
   <title>Página Inicial - SOS TI</title>
 </head>
+
 <body>
-  <header class="header-content">
-    <div class="logo-search">
-        <div class="logo">
-            <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
+
+    <header class="header-content">
+
+        <div class="logo-search">
+            <div class="logo">
+                <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" Logo S.O.S TI"> </a>
+            </div>
+            <div class="search">
+                <label for="site-search">Pesquisar</label>
+                <input type="search" id="site-search" name="q">
+                <button class="btn-search">Ir</button>
+            </div>
+        </div>     
+
+        <div class="texto-header">
+            <h3>SOS T.I</h3>
+            <p>Seu Guia Na Programação</p>
         </div>
-        <div class="search">
-            <label for="site-search">Pesquisar</label>
-            <input type="search" id="site-search" name="q">
-            <button class="btn-search">Ir</button>
-        </div>
-    </div>     
-    <div class="texto-header">
-        <h3>SOS T.I</h3>
-        <p>Seu Guia Na Programação</p>
-    </div>
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="python.html">Python</a></li>
-            <li><a href="html-css.html">HTML/CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-            <li><a href="autores.html">Autores</a></li>
-        </ul>
-    </nav>
-</header>
-  <main class="main-background">
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="html-css.html">HTML/CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+  <main>
     <section class="main-text">
-      <h1>Ser programador: uma breve introdução</h1>
-      <h2 style="font-size: 20px">(Responda a equação para continuar)</h2>
-      <br>
-      <br>
-      <h2>O que faz um desenvolvedor?</h2>
-      <img src="assets-index/img/home-01.jpg" id="img1" class="main-images">
-      <p id="parabens" style="text-align: center">Utilize dois números que multiplicados um pelo outro resultem em 100</p>
-      <br>
-        <form action ="" class="formcalc">
-          <div id="divinp1" class="label-calc">
-          <label>Número 1: </label>
-          <input type="tel" size="3" id="input1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-          </div>
-          <div id="divinp2" class="label-calc">
-          <label>Número 2: </label>
-          <input type="tel" size="3" id="input2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-          </div>
-          <button id="btnCalcular" type="button">Calcular</button>
-        </form>
+
+      <div>
+        <h1>Ser programador: uma breve introdução</h1>
+        <h2 style="font-size: 20px">(Responda a equação para continuar)</h2>
+        <h3>O que faz um desenvolvedor?</h3>
+        <img src="assets-index/img/home-01.jpg" id="img1" class="main-images">
+        <p id="parabens" style="text-align: center">Utilize dois números que multiplicados um pelo outro resultem em 100:</p>
+          <form action ="" class="formcalc">
+            <div id="divinp1" class="label-calc">
+            <label class="number">Número 1: </label>
+            <input type="tel" size="3" id="input1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            </div>
+            <div id="divinp2" class="label-calc">
+            <label class="number">Número 2: </label>
+            <input type="tel" size="3" id="input2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            </div>
+            <button id="btnCalcular" type="button">Calcular</button>
+          </form> 
+      </div>
+
       <div id="texto1" class="hidden">
-        <p>Se você nos encontrou aqui é porque provavelmente já tem uma noção básica da área de programação, ou então está
-        planejando mergulhar no assunto e estava
-        pesquisando mais sobre.
-        Mas você sabe o que exatamente um desenvolvedor (popularmente conhecido como "<span
-          style="font-style: italic;">dev</span>", "<span class="italico">web</span>
-        <span class="italico">dev</span>", "programador", entre outros) faz?
-        <br>
-        <br>
-      <p>Bem, ele é quem escreve todos os códigos que fazem um <span class="italico">software</span>
-        (programas de computador, aplicativos de celular, etc) funcionar, desde sua parte mais simples como criar caixas
-        de texto para preenchimento e outros elementos que fazem e exigem interação direta do usuário e também a criação
-        de conteúdos dinâmicos (mais comum em <span class="italico">front-end</span>), até as partes mais avançadas como
-        armazenamento e gerenciamento do banco
-        de dados que armazenará todos os dados coletados. Ah, são também os desenvolvedores
-        que criam e estilizam os sites, como este que você está vendo agora.</p>
-      <br>
-      <p>Em suma, são muitas as possibilidades e áreas para um desenvolvedor exercer seu talento, mas a principal
-        informação que devemos ter em mente é que existem, basicamente, três tipo de desenvolvedores, sendo eles: <span
-          style="font-style: italic;">front-end, back-end e full-stack</span>.
-      </p>
-      <br>
-      </p>
-      <h3 style="font-style: italic;"">Front-end? Back-end? Full-stack?</h3>
-      <h2 style="font-size: 20px">(Clique nas imagens para continuar)</h2>
+        <p>Se você nos encontrou aqui é porque provavelmente já tem uma noção básica da área de programação, ou então está planejando mergulhar no assunto e estava pesquisando mais sobre. Mas você sabe o que exatamente um desenvolvedor (popularmente conhecido como <span>dev, web, programador</span>, entre outros) faz?
+         
+        <p>Bem, ele é quem escreve todos os códigos que fazem um <span>software</span> (programas de computador, aplicativos de celular, etc) funcionar, desde sua parte mais simples como criar caixas de texto para preenchimento e outros elementos que fazem e exigem interação direta do usuário e também a criação de conteúdos dinâmicos (mais comum em <span>front-end</span>), até as partes mais avançadas como armazenamento e gerenciamento do banco de dados que armazenará todos os dados coletados. Ah, são também os desenvolvedores que criam e estilizam os sites, como este que você está vendo agora.</p>
+        
+        <p>Em suma, são muitas as possibilidades e áreas para um desenvolvedor exercer seu talento, mas a principal informação que devemos ter em mente é que existem, basicamente, três tipo de desenvolvedores, sendo eles: <span>front-end, back-end e full-stack</span>.
+        </p>
+     
+      <h3>Front-end? Back-end? Full-stack?</h3>
+      <h2 style="font-size: 20px">(Clique na Imagem para Continuar)</h2>
       <img src=" assets-index/img/home-02.jpg" id="img2" class="main-images">
+
         <div id ="texto2" class="hidden">
-          <p>Calma, sabemos que se você nunca ouviu falar nestes termos certamente está perdido
-          imaginando o que significam.
-          <br>
-          <br>
-        <p>Basicamente, um desenvolvedor <span class="italico">front-end</span> é responsável pela criação e
-          gerenciamento de todas as partes que são "vistas" pelo usuário e permitem interação direta dele com o
-          programa, ou seja, a parte
-          "frontal" do projeto (daí o nome "<span class="italico">front</span>", do inglês "frente").
-          Este desenvolvedor trabalha mais com as linguagens <span style="color: orange">HTML e CSS</span>, que sempre andam juntas, e os mais
-          experientes utilizam, além destas duas, a linguagem <span style="color: orange">JavaScript</span> para complementar a funcionalidade de seus projetos.</p>
-        <br>
-        <br>
-        <p>Já o desenvolvedor <span class="italico">back-end</span> é o oposto: fica responsável por toda a
-          estrutura do projeto que não fica tão visível assim, ele é quem faz tudo funcionar "por trás da cena", daí o
-          nome
-          do inglês "<span class="italico">back"</span>, que pode ser traduzido como "atrás". Algumas das linguagens mais utilizadas por eles são:
-          <span style="color: orange">Python, PHP, Java, C#,</span> entre muitas outras.
-        </p>
-        <br>
-        <br>
-        <p>E o <span class="italico">full-stack</span>? É aquele capaz de desempenhar as atribuições de ambos <span
-            class="italico">front</span> e <span class="italico">back-end</span>, por isso o nome
-          "<span class="italico">full</span>", do inglês "completo".
-        </p>
-        <br>
-        <br>
-        </p>
-        <h3>Por onde começar?</h3>
-        <img src="assets-index/img/home-03.jpg" id="img3" class="main-images">
-        <div id="texto3" class="hidden">
-          <p>Agora que você já entendeu o que faz cada tipo de desenvolvedor, pode estar se
-          perguntando: Beleza né, mas por onde eu começo para aprender mais sobre cada um deles?
-          <br>
-          <br>
-        <p>E foi pensando em te mostrar os melhores caminhos que a nossa equipe separou os melhores materiais (gratuitos
-          e pagos) em guias muito bem elaborados que irão auxiliá-lo na sua jornada para se tornar o <span
-            style="font-style: italic;">dev</span> dos sonhos de sua escolha.
-        </p>
-        <br>
-        <br>
-        <p>Clique <a href="python.html" style="text-decoration: underline; color: orange;">aqui</a> para conhecer a linguagem <span style="color: orange">Python.</span>
-        </p>
-        <p>Clique <a href="javascript.html" style="text-decoration: underline; color: orange;">aqui</a> para conhecer a linguagem <JavaScript. style="color: orange">JavaScript.</span>
-        </p>
-        <p>Clique <a href="html-css.html" style="text-decoration: underline; color: orange;">aqui</a> para conhecer as linguagens <span style="color: orange">HTML e CSS.</span>
-        </div>
+          <p>Calma, sabemos que se você nunca ouviu falar nestes termos certamente está perdido imaginando o que significam.</p>
+
+          <p>Basicamente, um desenvolvedor <span>front-end</span> é responsável pela criação e gerenciamento de todas as partes que são vistas pelo usuário e permitem interação direta dele com o programa, ou seja, a parte "frontal" do projeto (daí o nome <span>front</span>, do inglês "frente"). Este desenvolvedor trabalha mais com as linguagens <span>HTML e CSS</span>, que sempre andam juntas, e os mais experientes utilizam, além destas duas, a linguagem <span>JavaScript</span> para complementar a funcionalidade de seus projetos.</p>
+    
+          <p>Já o desenvolvedor <span>back-end</span> é o oposto: fica responsável por toda a estrutura do projeto que não fica tão visível assim, ele é quem faz tudo funcionar "por trás da cena", daí o nome do inglês <span>back</span>, que pode ser traduzido como "atrás". Algumas das linguagens mais utilizadas por eles são: <span>Python, PHP, Java, C#,</span> entre muitas outras.</p>
+
+          <p>E o <span>full-stack</span>? É aquele capaz de desempenhar as atribuições de ambos <span>front</span> e <span>back-end</span>, por isso o nome<span>"full"</span>, do inglês "completo".</p>
+          
+          <h3>Por onde começar?</h3>
+          <h2 style="font-size: 20px">(Clique na Imagem para Continuar)</h2>
+          <img src="assets-index/img/home-03.jpg" id="img3" class="main-images">
+
+          <div id="texto3" class="hidden">
+            <p>Agora que você já entendeu o que faz cada tipo de desenvolvedor, pode estar se perguntando: Beleza né, mas por onde eu começo para aprender mais sobre cada um deles?</p>
+          
+            <p>E foi pensando em te mostrar os melhores caminhos que a nossa equipe separou os melhores materiais (gratuitos e pagos) em guias muito bem elaborados que irão auxiliá-lo na sua jornada para se tornar o <span>dev</span> dos sonhos de sua escolha.
+            
+            <p>Clique <a href="python.html" style="text-decoration: underline; text-transform:uppercase; color: #ff4305;">aqui</a> para conhecer a linguagem <span style="color: #5C0DC1">Python</span> </p>
+
+            <p>Clique <a href="javascript.html" style="text-decoration: underline; text-transform:uppercase; color: #ff4305;">aqui</a> para conhecer a linguagem <span style="color: #5C0DC1">JavaScript</span> </p>
+
+            <p>Clique <a href="html-css.html" style="text-decoration: underline;  text-transform:uppercase; color: #ff4305;">aqui</a> para conhecer as linguagens <span style="color: #5C0DC1">HTML e CSS</span></p>
+          </div>
+
         </div>
       </div>
     </section>
-             <div id="button_top">
-              <a style="color: #fff; text-decoration: none;">&#65087;</a>
-          </div>
+
+
+    <!--INICIO BUTTON BACK TO TOP-->
+    <div id="button_top">
+      <a style="color: #fff; text-decoration: none;">&#65087;</a>
+    </div>
+    <!--FINAL BUTTON BACK TO TOP-->
+  
   </main>
-  <bo>
-    <footer>
-      <div class="row">
 
-          <div class="column">
-              <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" Logo S.O.S TI"> </a>
-              <ul>
-                  <li>Portal Tech - Proz Educação 2023</li>
-                  <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
-                  <li>Professora: Juliana Sinnott</li>
-              </ul>
-          </div>
+  <footer>
+    <div class="row">
 
-          <div class="column">
-              <h2><b>Redes Sociais</b></h2>
-              <ul class="social-list">
-                  <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Logo Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://www.instagram.com/" target="_blank" title="Logo Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://github.com/" target="_blank" title="Logo GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://br.linkedin.com/" target="_blank" title="Logo LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://twitter.com/" target="_blank" title="Logo Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://www.youtube.com/" target="_blank" title="Logo Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
-              </ul>               
-          </div>
-          
-          <div class="column">
-              <h2 id="title-newsletter"><b>Newsletter</b></h2>
-              <p>Receba Nossos Conteúdos em Primeira Mão!</p>
-              <form>
-                  <div>
-                      <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
-                      <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
-                 </div>                  
-                  <button type="submit">Enviar</button>       
-              </form>               
-          </div>
+        <div class="column">
+            <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" Logo S.O.S TI"> </a>
+            <ul>
+                <li>Portal Tech - Proz Educação 2023</li>
+                <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
+                <li>Professora: Juliana Sinnott</li>
+            </ul>
+        </div>
 
-      </div>
+        <div class="column">
+            <h2><b>Redes Sociais</b></h2>
+            <ul class="social-list">
+                <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Logo Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                <li> <a href="https://www.instagram.com/" target="_blank" title="Logo Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                <li> <a href="https://github.com/" target="_blank" title="Logo GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                <li> <a href="https://br.linkedin.com/" target="_blank" title="Logo LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                <li> <a href="https://twitter.com/" target="_blank" title="Logo Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                <li> <a href="https://www.youtube.com/" target="_blank" title="Logo Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+            </ul>               
+        </div>
+                
+        <div class="column">
+            <h2 id="title-newsletter"><b>Newsletter</b></h2>
+            <p>Receba Nossos Conteúdos em Primeira Mão!</p>
+            <form>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
+                    <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
+               </div>                  
+                <button type="submit">Enviar</button>       
+            </form>               
+        </div>
 
-      <div class="Copyright-informativo">
-          <div class="Copyright">
-              <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
-          </div>
-          <div class="informativo">
-              <ul>
-                  <li><a href="#">Política de Privacidade</a></li>
-                  <li><a href="#">Termos e Condições de Uso</a></li>
-                  <li><a href="#">Política de Cookies</a></li>
-              </ul>
-          </div>           
-      </div>
-  </footer>
-  <div class="modal_submit">
+    </div>
+
+    <div class="Copyright-informativo">
+        <div class="Copyright">
+            <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
+        </div>
+        <div class="informativo">
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos e Condições de Uso</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+            </ul>
+        </div>           
+    </div>
+</footer>
+
+<div class="modal_submit">
+
     <div id="error_submit" class="error_submit">
         <div class="modal">
             <button class="fechar" id="fechar">X</button>
             <p>O Email Precisa Ser Preenchido Corretamente</p>
         </div>
     </div>
+
     <div id="correct_submit" class="correct_submit">
         <div class="modal">
             <button class="fechar" id="fechar" onclick="limparCampos();">X</button>
             <p>Você foi Inscrito com Sucesso!</p>
         </div>
     </div>
+
 </div>
+
 </body>
 </html>
