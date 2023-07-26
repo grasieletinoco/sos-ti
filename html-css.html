@@ -12,38 +12,42 @@
     
 </head>
 <body>
-  <header class="header-content">
 
-    <div class="logo-search">
-        <div class="logo">
-            <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
+    <header class="header-content">
+
+        <div class="logo-search">
+            <div class="logo">
+                <a class="logo" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" Logo S.O.S TI"> </a>
+            </div>
+            <div class="search">
+                <label for="site-search">Pesquisar</label>
+                <input type="search" id="site-search" name="q">
+                <button class="btn-search">Ir</button>
+            </div>
+        </div>     
+
+        <div class="texto-header">
+            <h3>SOS T.I</h3>
+            <p>Seu Guia Na Programação</p>
         </div>
-        <div class="search">
-            <label for="site-search">Pesquisar</label>
-            <input type="search" id="site-search" name="q">
-            <button class="btn-search">Ir</button>
-        </div>
-    </div>     
 
-    <div class="texto-header">
-        <h3>SOS T.I</h3>
-        <p>Seu Guia Na Programação</p>
-    </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="html-css.html">HTML/CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
 
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="python.html">Python</a></li>
-            <li><a href="html-css.html">HTML/CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-            <li><a href="autores.html">Autores</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
+    </header>
+
+    <main>
+
         <section class="sobre">
             <!-- Sobre o que é HTML/CSS -->
-            <h1 class="titulo">O que é HTML/CSS</h1>
+            <h1 class="titulo">O que é HTML/CSS ?</h1>
             <p>HTML e CSS são duas das principais linguagens usadas na criação de sites e páginas da web. HTML é a linguagem usada para criar a estrutura básica de uma página web, enquanto CSS é usada para estilizar e formatar a aparência da página.</p>
 
             <p>HTML é uma abreviação de HyperText Markup Language (Linguagem de Marcação de Hipertexto). Ele é usado para criar a estrutura básica de uma página web, incluindo o conteúdo e a organização do conteúdo. Isso inclui o uso de tags HTML, que são códigos que indicam como o conteúdo deve ser exibido na página. As tags incluem elementos como cabeçalhos, parágrafos, imagens e links.</p>
@@ -52,138 +56,150 @@
 
             <p>Ambas as linguagens são essenciais para a criação de páginas da web modernas e funcionais. O HTML define a estrutura e o conteúdo da página, enquanto o CSS é usado para dar estilo e apresentação ao conteúdo. Juntas, essas duas linguagens permitem a criação de sites e páginas web visualmente atraentes e fáceis de usar.</p>
         </section>
-        <section class="secao">
+
+        <section class="cursos">
             <!-- Cursos gratuitos -->
-            <h2 class="titulo">Cursos gratuitos</h2>
-            <div class="cursos-sec" >
-                <div class="cursos-div tamanho-div-m" ><!-- curso em vídeo -->
-                    <img src="assets-html-css/img/curso em video.jpeg" alt="Curso em Vídeo">
-                    <h3 class="titulo-curso">Curso em Vídeo</h3>
-                    <p>O curso de HTML e CSS do Curso em Vídeo é um curso online gratuito que ensina o básico de HTML e CSS para iniciantes que desejam criar páginas da web. Ministrado pelo professor Gustavo Guanabara, o curso é dividido em módulos e oferece aulas em vídeo, exemplos práticos, exercícios e desafios para os alunos praticarem. O curso tem uma abordagem didática e descontraída, tornando o aprendizado fácil e divertido.</p>
-                    <p class="link"><a href="https://www.cursoemvideo.com/" target="_blank">ACESSE AQUI</a></p>
+            <div class="cursos_gratuitos">
+               <h2 class="titulo_cursos">Cursos gratuitos</h2>
+               <div class="cards_cursos_gratuitos" >
+                    <div class="card_cursos_g" ><!-- curso em vídeo -->
+                        <img src="assets-html-css/img/img_curso_gratuito-01.jpg" alt="Curso em Vídeo">
+                        <h3 class="titulo-curso">Curso em Vídeo</h3>
+                        <p>O curso de HTML e CSS do Curso em Vídeo é um curso online gratuito que ensina o básico de HTML e CSS para iniciantes que desejam criar páginas da web. Ministrado pelo professor Gustavo Guanabara, o curso é dividido em módulos e oferece aulas em vídeo, exemplos práticos, exercícios e desafios para os alunos praticarem. O curso tem uma abordagem didática e descontraída, tornando o aprendizado fácil e divertido.</p>
+                        <button class="btn_card"> <a href="https://www.cursoemvideo.com/" target="_blank">ACESSAR</a> </button>
+                    </div>
+                    <div class="card_cursos_g"> <!-- freecodecamp -->
+                        <img src="assets-html-css/img/img_curso_gratuito-02.jpg" alt="Freecodecamp">
+                        <h3 class="titulo-curso">FreeCodeCamp</h3>
+                        <p>O curso de HTML e CSS do FreeCodeCamp é um programa de aprendizagem online gratuito que ensina as habilidades básicas de codificação para iniciantes, como construir páginas da web usando HTML e CSS. O curso é dividido em módulos, começando com as estruturas básicas do HTML e progredindo para tópicos mais avançados, como criação de formulários, estilização com CSS e desenvolvimento web responsivo.</p>
+                        <button class="btn_card"> <a href="https://www.freecodecamp.org/portuguese/learn" target="_blank">ACESSAR</a> </button>
+                    </div>
+                    <div class="card_cursos_g"><!-- Otávio miranda youtube -->
+                        <img src="assets-html-css/img/img_curso_gratuito-03.jpg" alt="curso html e css de otávio miranda">
+                        <h3 class="titulo-curso">Otávio Miranda</h3>
+                        <p>O curso de Otávio Miranda sobre HTML e CSS é ensinada de forma simples, de fácil compreensão e encontra-se disponível gratuitamente em seu canal no Youtube. Com vídeos teóricos e exercícios, é ensinado sobre os elementos da HTML e seus usos, assim como também o uso das mais recentes tecnologias de estilização no CSS, como o Flexbox e o Grid Layout, para a criação de sites profissionais e responsivos.</p>
+                        <button class="btn_card"> <a href="https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank">ACESSAR</a> </button>
+                    </div>
                 </div>
-                <div class="cursos-div tamanho-div-m"> <!-- freecodecamp -->
-                    <img src="assets-html-css/img/freecodecamp.png" alt="Freecodecamp">
-                    <h3 class="titulo-curso">freeCodeCamp</h3>
-                    <p>O curso de HTML e CSS do FreeCodeCamp é um programa de aprendizagem online gratuito que ensina as habilidades básicas de codificação para iniciantes, como construir páginas da web usando HTML e CSS. O curso é dividido em módulos, começando com as estruturas básicas do HTML e progredindo para tópicos mais avançados, como criação de formulários, estilização com CSS e desenvolvimento web responsivo.</p>
-                    <p class="link"><a href="https://www.freecodecamp.org/portuguese/learn" target="_blank">ACESSE AQUI</a></p>
-                </div>
-                <div class="cursos-div tamanho-div-m"><!-- Otávio miranda youtube -->
-                    <img src="assets-html-css/img/otavio miranda.jpg" alt="curso html e css de otávio miranda">
-                    <h3 class="titulo-curso">Otávio Miranda</h3>
-                    <p>O curso de Otávio Miranda sobre HTML e CSS é ensinada de forma simples, de fácil compreensão e encontra-se disponível gratuitamente em seu canal no Youtube. Com vídeos teóricos e exercícios, é ensinado sobre os elementos da HTML e seus usos, assim como também o uso das mais recentes tecnologias de estilização no CSS, como o Flexbox e o Grid Layout, para a criação de sites profissionais e responsivos.</p>
-                    <p class="link"><a href="https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank">ACESSE AQUI</a></p>
+            </div>
+
+            <!-- Cursos pagos -->
+            <div class="cursos_pagos">
+                <h2 class="titulo_cursos">Cursos pagos</h2>
+                <div class="cards_cursos_pagos">
+                    <div class="card_cursos_p" ><!-- origamid -->
+                        <img src="assets-html-css/img/img_curso_pago-01.jpg" alt="origamid">
+                        <h3 class="titulo-curso">Origamid</h3>
+                        <p>O curso de HTML e CSS do Origamid é um curso online pago que ensina a criação de páginas da web usando HTML, CSS e JavaScript. O curso é projetado para iniciantes e oferece aulas em vídeo, exercícios e desafios práticos para os alunos. O curso é dividido em módulos que cobrem desde os conceitos básicos até tópicos mais avançados, como animação CSS e design responsivo. O curso também inclui uma comunidade online onde os alunos podem compartilhar seus projetos, fazer perguntas e receber feedback. A abordagem de ensino é prática e interativa, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web com alta qualidade estética e funcionalidade.</p>
+                        <button class="btn_card"> <a href="https://www.origamid.com/" target="_blank">ACESSAR</a> </button>
+                    </div>
+                    <div class="card_cursos_p"><!-- b7web -->
+                        <img src="assets-html-css/img/img_curso_pago-02.jpg" alt="B7WEB">
+                        <h3 class="titulo-curso">B7WEB</h3>
+                        <p>O curso de HTML e CSS da B7Web é um curso online pago que ensina os fundamentos do HTML e CSS para iniciantes que desejam criar páginas da web. O curso é dividido em módulos que abrangem desde os conceitos básicos até tópicos mais avançados, como layout responsivo, animações CSS e frameworks CSS. As aulas são em vídeo, com exemplos práticos e exercícios para ajudar os alunos a praticarem o que foi ensinado. O curso também inclui suporte para dúvidas e acesso a uma comunidade online de estudantes. A abordagem de ensino é prática e didática, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web.</p>
+                        <button class="btn_card"> <a href="https://b7web.com.br/" target="_blank">ACESSAR</a> </button>
+                    </div>
+    
+                    <div class="card_cursos_p"><!-- ebaconline -->
+                        <img src="assets-html-css/img/img_curso_pago-03.jpg" alt="Ebac Online">
+                        <h3 class="titulo-curso">EBAC ONLINE</h3>
+                        <p>O curso de HTML e CSS do Ebaconline é um curso online pago que ensina a criação de páginas da web usando HTML, CSS e JavaScript. O curso é projetado para iniciantes e oferece aulas em vídeo, exercícios práticos e exemplos para ajudar os alunos a entender os conceitos. O curso é bem estruturado, com módulos que abrangem desde os conceitos básicos até tópicos avançados, como design responsivo e frameworks CSS. O curso também inclui suporte para dúvidas e acesso a uma comunidade online de estudantes. A abordagem de ensino é prática e didática, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web modernas e funcionais.</p>
+                        <button class="btn_card"> <a href="https://ebaconline.com.br/front-end" target="_blank">ACESSAR</a> </button>
+                    </div>
+        
                 </div>
             </div>
 
         </section>
-        <section class="secao">
-            <!-- Cursos pagos -->
-            <h2 class="titulo">Cursos pagos</h2>
-            <div class="cursos-sec">
-                <div class="cursos-div tamanho-div-g" ><!-- origamid -->
-                    <img src="assets-html-css/img/origamid.jpg" alt="origamid">
-                    <h3 class="titulo-curso">Origamid</h3>
-                    <p>O curso de HTML e CSS do Origamid é um curso online pago que ensina a criação de páginas da web usando HTML, CSS e JavaScript. O curso é projetado para iniciantes e oferece aulas em vídeo, exercícios e desafios práticos para os alunos. O curso é dividido em módulos que cobrem desde os conceitos básicos até tópicos mais avançados, como animação CSS e design responsivo. O curso também inclui uma comunidade online onde os alunos podem compartilhar seus projetos, fazer perguntas e receber feedback. A abordagem de ensino é prática e interativa, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web com alta qualidade estética e funcionalidade.</p>
-                    <p class="link"><a href="https://www.origamid.com/" target="_blank">ACESSE AQUI</a></p>
-                </div>
-                <div class="cursos-div tamanho-div-g"><!-- b7web -->
-                    <img src="assets-html-css/img/b7web.png" alt="B7WEB">
-                    <h3 class="titulo-curso">B7WEB</h3>
-                    <p>O curso de HTML e CSS da B7Web é um curso online pago que ensina os fundamentos do HTML e CSS para iniciantes que desejam criar páginas da web. O curso é dividido em módulos que abrangem desde os conceitos básicos até tópicos mais avançados, como layout responsivo, animações CSS e frameworks CSS. As aulas são em vídeo, com exemplos práticos e exercícios para ajudar os alunos a praticarem o que foi ensinado. O curso também inclui suporte para dúvidas e acesso a uma comunidade online de estudantes. A abordagem de ensino é prática e didática, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web.</p>
-                    <p class="link"><a href="https://b7web.com.br/" target="_blank">ACESSE AQUI</a></p>
-                </div>
-                <div class="cursos-div tamanho-div-g"><!-- ebaconline -->
-                    <img src="assets-html-css/img/ebac.png" alt="Ebac Online">
-                    <h3 class="titulo-curso">EBACONLINE</h3>
-                    <p>O curso de HTML e CSS do Ebaconline é um curso online pago que ensina a criação de páginas da web usando HTML, CSS e JavaScript. O curso é projetado para iniciantes e oferece aulas em vídeo, exercícios práticos e exemplos para ajudar os alunos a entender os conceitos. O curso é bem estruturado, com módulos que abrangem desde os conceitos básicos até tópicos avançados, como design responsivo e frameworks CSS. O curso também inclui suporte para dúvidas e acesso a uma comunidade online de estudantes. A abordagem de ensino é prática e didática, visando desenvolver habilidades e conhecimentos práticos na criação de páginas da web modernas e funcionais.</p>
-                    <p class="link"><a href="https://ebaconline.com.br/front-end" target="_blank">ACESSE AQUI</a></p>
-                </div>
-    
-            </div>
-        </section>
+
         <section class="livros" >
             <!-- Dicas de livros -->
-            <h2 class="titulo">Dicas de livros!</h2>
+            <h2 class="subtitulo">Dicas de livros</h2>
             <p id="texto-dicas-livros">Se você deseja se aprofundar em HTML e CSS e criar páginas web incríveis, confira esses livros essenciais: </p>
             <div id="livro-imagens">
-                
+
+            </div>
+        </section>
+
+
+         <!--INICIO BUTTON BACK TO TOP-->
+        <div id="button_top">
+            <a style="color: #fff; text-decoration: none;">&#65087;</a>
+        </div>
+        <!--FINAL BUTTON BACK TO TOP-->
+        
+    </main>
+
+    <footer>
+        <div class="row">
+
+            <div class="column">
+                <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" Logo S.O.S TI"> </a>
+                <ul>
+                    <li>Portal Tech - Proz Educação 2023</li>
+                    <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
+                    <li>Professora: Juliana Sinnott</li>
+                </ul>
             </div>
 
-        </section>
-                 <div id="button_top">
-                    <a style="color: #fff; text-decoration: none;">&#65087;</a>
-                </div>
-    </main>
-    <footer>
-      <div class="row">
+            <div class="column">
+                <h2><b>Redes Sociais</b></h2>
+                <ul class="social-list">
+                    <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Logo Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.instagram.com/" target="_blank" title="Logo Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://github.com/" target="_blank" title="Logo GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://br.linkedin.com/" target="_blank" title="Logo LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://twitter.com/" target="_blank" title="Logo Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
+                    <li> <a href="https://www.youtube.com/" target="_blank" title="Logo Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
+                </ul>               
+            </div>
+                    
+            <div class="column">
+                <h2 id="title-newsletter"><b>Newsletter</b></h2>
+                <p>Receba Nossos Conteúdos em Primeira Mão!</p>
+                <form>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
+                        <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
+                   </div>                  
+                    <button type="submit">Enviar</button>       
+                </form>               
+            </div>
 
-          <div class="column">
-              <a class="logo_footer" href="index.html"> <img src="assets-base/img/logo-sosti.png" alt=" S.O.S TI"> </a>
-              <ul>
-                  <li>Portal Tech - Proz Educação 2023</li>
-                  <li>Turma 5 - Grupo 2 (Projeto Integrador)</li>
-                  <li>Professora: Juliana Sinnott</li>
-              </ul>
-          </div>
+        </div>
 
-          <div class="column">
-              <h2><b>Redes Sociais</b></h2>
-              <ul class="social-list">
-                  <li> <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook"><img src="./assets-base/img/social-media-facebbok.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./assets-base/img/social-media-instagram.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://github.com/" target="_blank" title="GitHub"><img src="./assets-base/img/social-media-github.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://br.linkedin.com/" target="_blank" title="LinkedIn"><img src="./assets-base/img/social-media-linkedin.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="./assets-base/img/social-media-twitter.png" width="30px" height="30px"> </a></li>
-                  <li> <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./assets-base/img/social-media-youtube.png" width="30px" height="30px"> </a></li>
-              </ul>               
-          </div>
-                  
-          <div class="column">
-              <h2 id="title-newsletter"><b>Newsletter</b></h2>
-              <p>Receba Nossos Conteúdos em Primeira Mão!</p>
-              <form>
-                  <div>
-                      <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
-                      <span id="email-helper" class="helper-text">Mensagem de Ajuda</span>   
-                 </div>                  
-                  <button type="submit">Enviar</button>       
-              </form>               
-          </div>
+        <div class="Copyright-informativo">
+            <div class="Copyright">
+                <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
+            </div>
+            <div class="informativo">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos e Condições de Uso</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>           
+        </div>
+    </footer>
 
-      </div>
+    <div class="modal_submit">
 
-      <div class="Copyright-informativo">
-          <div class="Copyright">
-              <p>Copyright ©2023 Todos os Direitos Reservados - S.O.S TI</p>
-          </div>
-          <div class="informativo">
-              <ul>
-                  <li><a href="#">Política de Privacidade</a></li>
-                  <li><a href="#">Termos e Condições de Uso</a></li>
-                  <li><a href="#">Política de Cookies</a></li>
-              </ul>
-          </div>           
-      </div>
-  </footer>
+        <div id="error_submit" class="error_submit">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <p>O Email Precisa Ser Preenchido Corretamente</p>
+            </div>
+        </div>
 
-  <div class="modal_submit">
+        <div id="correct_submit" class="correct_submit">
+            <div class="modal">
+                <button class="fechar" id="fechar" onclick="limparCampos();">X</button>
+                <p>Você foi Inscrito com Sucesso!</p>
+            </div>
+        </div>
 
-      <div id="error_submit" class="error_submit">
-          <div class="modal">
-              <button class="fechar" id="fechar">X</button>
-              <p>O Email Precisa Ser Preenchido Corretamente</p>
-          </div>
-      </div>
+    </div>
 
-      <div id="correct_submit" class="correct_submit">
-          <div class="modal">
-              <button class="fechar" id="fechar" onclick="limparCampos();">X</button>
-              <p>Você foi Inscrito com Sucesso!</p>
-          </div>
-      </div>
-
-  </div>
 
   
 </body>
