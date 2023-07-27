@@ -1,29 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif; 
-    box-sizing: border-box;
-}
-
-main{
-    max-width: 1300px;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-
 /*INICIO PYTHON*/
 .title{
     margin: 1rem 0;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Oswald', sans-serif;
     color: #212529;
     text-decoration:underline#ff4305;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .indice-content{
@@ -265,3 +246,86 @@ main{
 }
 
 /*FINAL LIVROS*/
+
+
+
+/*INICIO PROZ EDUCAÇÃO*/
+.proz_educacao{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.proz_educacao_texto{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.proz_educacao_texto h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #682ac4;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #ff4305;
+
+}
+
+.proz_educacao_texto p{
+    padding-bottom: 2rem;
+}
+
+.proz_educacao_texto h3{
+    font-family: 'Oswald', sans-serif;
+    color: #212529;
+    padding-bottom: 0.5rem;
+}
+
+.proz_educacao_texto ul{
+    padding-bottom: 1.5rem;
+}
+
+.proz_educacao_texto ul li{
+    list-style: none;
+}
+
+.proz_educacao_texto button{
+    height: 44px;
+    width: 200px;
+    border: 0;
+    background: linear-gradient(180deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.proz_educacao_texto button a{
+    padding: 15px 33px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.proz_educacao_texto button:hover{
+    background: linear-gradient(180deg, #B221E4 0%, #5C0DC1 100%);
+    box-shadow: 0 0 4px #5C0DC1;
+}
+
+.proz_educacao_imagem {
+    height: 300px;
+    width: 400px;
+    margin-right: 2rem;
+    padding: 50px 30px;
+    border: 2px groove #5a3593;
+    border-radius: 20px 20px 100% 20px;
+    background-color: #58349317;
+
+}
+
+.proz_educacao_imagem img{
+    width: 300px;
+    text-align: center;
+}
+
+/*FINAL PROZ EDUCAÇÃO*/
