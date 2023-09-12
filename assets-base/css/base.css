@@ -183,7 +183,7 @@ form{
   justify-content: center;
 }
 
-input[type="email"] { 
+#email { 
   border: 0;
   padding: 0.5rem;
   margin-right: 0.3rem;
