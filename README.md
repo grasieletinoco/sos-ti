@@ -10,9 +10,9 @@
 
 ___
 
+<br>
 
-
-##### :computer: Tecnologias Utilizadas:
+### :computer: Tecnologias Utilizadas:
 
 - HTML5
 
@@ -20,21 +20,23 @@ ___
 
 - JavaScript
 
+<br>
 
-
-##### :pencil: Tema do Projeto:
+### :pencil: Tema do Projeto:
 
 - Indicação de Sites que Oferecem Cursos de Programação
 
+<br>
 
-
-##### :globe_with_meridians: Nome do Site:
+### :globe_with_meridians: Nome do Site:
 
 - S.O.S TI
 
+<br>
 
+### :hammer_and_wrench: Etapas do Desenvolvimento:
 
-##### :hammer_and_wrench: Etapas do Desenvolvimento:
+<br>
 
 :heavy_check_mark: <u>Sprint l: Criar um Layout com 5 Páginas relacionadas ao Tema do Projeto</u>
 
@@ -43,7 +45,7 @@ ___
 - Desenvolver o layout de pelo menos 5 telas do site, uma vez que cada grupo terá em média 5 integrantes
 - Criar repositório remoto com todos os colaboradores do grupo com as referências do layout, que pode ser feito desde à mão até figma
 
-
+<br>
 
 :heavy_check_mark: <u>Sprint ll: Criar Estrutura HTML para cada Layout criado anteriormente</u>
 
@@ -55,7 +57,7 @@ ___
 
 - Configurar o repositório criado pela equipe de trabalho
 
-
+<br>
 
 :heavy_check_mark: <u>Sprint lll: Estilizar as Páginas criadas anteriormente em HTML</u>
 
@@ -67,7 +69,7 @@ ___
 
 - Tentar implementar o uso de flex-box em ao menos uma das telas
 
-
+<br>
 
 :heavy_check_mark: <u>Sprint lV: Renderização Dinâmica e Validação de Formulários</u>
 
@@ -77,7 +79,7 @@ ___
 - Validação de formulário
 - Renderização dinâmica de elementos em pelo menos uma página
 
-
+<br>
 
 :heavy_check_mark: <u>Sprint V - Banco de Dados:  Create e Read + Apresentação do PI</u>
 
@@ -93,9 +95,9 @@ ___
 
 :link: <a href="https://docs.google.com/drawings/d/1LEv3b_QuxfWQjVg6uQTHn-ZJ8lFGj_oauv4QLKpw5rw/edit?usp=sharing" target="_blank" rel="noopener">Diagrama</a>
 
+<br>
 
-
-##### 👩‍💻👨‍💻 Desenvolvedores:
+### 👩‍💻👨‍💻 Desenvolvedores:
 
 <a href="https://github.com/ArturHerodeck" target="_blank" rel="noopener">Artur Herodeck</a>
 
